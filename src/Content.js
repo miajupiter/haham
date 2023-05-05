@@ -2,7 +2,6 @@ import { Routes, Route, Navigate } from 'react-router-dom'
 import appInfo from './app-info'
 import routes from './app-routes'
 import { AppLayout } from './layouts'
-import { Footer } from './components'
 
 export default function Content() {
   return (
@@ -20,9 +19,8 @@ export default function Content() {
           element={<Navigate to='/home' />}
         />
       </Routes>
-      <Footer>
-        Copyright © {new Date().getFullYear()} {appInfo.copyright}
-      </Footer>
+    
+      
     </AppLayout>
   )
 }

@@ -1,12 +1,12 @@
-import React, { useEffect, useRef, useCallback, useMemo } from 'react';
-import TreeView from 'devextreme-react/tree-view';
-import { navigation } from '../../app-navigation';
-import { useNavigation } from '../../contexts/navigation';
-import { useScreenSize } from '../../utils/media-query';
-import './SideNavigationMenu.scss';
+import React, { useEffect, useRef, useCallback, useMemo } from 'react'
+import TreeView from 'devextreme-react/tree-view'
+import { navigation } from '../../app-navigation'
+import { useNavigation } from '../../contexts/navigation'
+import { useScreenSize } from '../../utils/media-query'
+import './SideNavigationMenu.scss'
 
 
-import * as events from 'devextreme/events';
+import * as events from 'devextreme/events'
 
 export default function SideNavigationMenu(props) {
   const {
@@ -15,10 +15,10 @@ export default function SideNavigationMenu(props) {
     openMenu,
     compactMode,
     onMenuReady
-  } = props;
+  } = props
 
-  const { isLarge } = useScreenSize();
-  function normalizePath () {
+  const { isLarge } = useScreenSize()
+  function normalizePath() {
     return navigation.map((item) => (
       { ...item, expanded: isLarge, path: item.path && !(/^\//.test(item.path)) ? `/${item.path}` : item.path }
     ))
@@ -28,39 +28,39 @@ export default function SideNavigationMenu(props) {
     normalizePath,
     // eslint-disable-next-line react-hooks/exhaustive-deps
     []
-  );
+  )
 
-  const { navigationData: { currentPath } } = useNavigation();
+  const { navigationData: { currentPath } } = useNavigation()
 
-  const treeViewRef = useRef(null);
-  const wrapperRef = useRef();
+  const treeViewRef = useRef(null)
+  const wrapperRef = useRef()
   const getWrapperRef = useCallback((element) => {
-    const prevElement = wrapperRef.current;
+    const prevElement = wrapperRef.current
     if (prevElement) {
-      events.off(prevElement, 'dxclick');
+      events.off(prevElement, 'dxclick')
     }
 
-    wrapperRef.current = element;
+    wrapperRef.current = element
     events.on(element, 'dxclick', (e) => {
-      openMenu(e);
-    });
-  }, [openMenu]);
+      openMenu(e)
+    })
+  }, [openMenu])
 
   useEffect(() => {
-    const treeView = treeViewRef.current && treeViewRef.current.instance;
+    const treeView = treeViewRef.current && treeViewRef.current.instance
     if (!treeView) {
-      return;
+      return
     }
 
     if (currentPath !== undefined) {
-      treeView.selectItem(currentPath);
-      treeView.expandItem(currentPath);
+      treeView.selectItem(currentPath)
+      treeView.expandItem(currentPath)
     }
 
     if (compactMode) {
-      treeView.collapseAll();
+      treeView.collapseAll()
     }
-  }, [currentPath, compactMode]);
+  }, [currentPath, compactMode])
 
   return (
     <div
@@ -79,8 +79,9 @@ export default function SideNavigationMenu(props) {
           onItemClick={selectedItemChanged}
           onContentReady={onMenuReady}
           width={'100%'}
+          animationEnabled={false}
         />
       </div>
     </div>
-  );
+  )
 }

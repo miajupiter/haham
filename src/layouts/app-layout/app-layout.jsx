@@ -2,11 +2,12 @@ import Drawer from 'devextreme-react/drawer'
 import ScrollView from 'devextreme-react/scroll-view'
 import React, { useState, useCallback, useRef } from 'react'
 import { useNavigate } from 'react-router'
-import { Header, SideNavigationMenu, Footer } from '../../components'
+import { Header, SideNavigationMenu } from '../../components'
 import './app-layout.scss'
 import { useScreenSize } from '../../utils/media-query'
 import { Template } from 'devextreme-react/core/template'
 import { useMenuPatch } from '../../utils/patches'
+import appInfo from '../../app-info'
 
 
 
@@ -84,19 +85,15 @@ export default function AppLayout({ title, children }) {
         shading={isLarge ? false : true}
         opened={menuStatus === MenuStatus.Closed ? false : true}
         template={'menu'}
+        animationEnabled={false}
       >
         <div className={'container'}>
           <ScrollView ref={scrollViewRef} className={'layout-body with-footer'}>
-            <div className={'content'}>
-              {React.Children.map(children, (item) => {
-                return item.type !== Footer && item
-              })}
-            </div>
-            <div className={'content-block'}>
-              {React.Children.map(children, (item) => {
-                return item.type === Footer && item
-              })}
-            </div>
+            <div className={'content'}>{children}</div>
+            <footer className={'content-block footer'}>
+              Copyright © {new Date().getFullYear()} {appInfo.copyright}
+            </footer>
+
           </ScrollView>
         </div>
         <Template name={'menu'}>
@@ -108,7 +105,9 @@ export default function AppLayout({ title, children }) {
           >
           </SideNavigationMenu>
         </Template>
+
       </Drawer>
+
     </div>
   )
 }

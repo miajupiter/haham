@@ -1,4 +1,18 @@
-@import "./themes/generated/variables.base.scss";
+@import "./variables.base.scss";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
 
 
 .app {
@@ -40,6 +54,17 @@
   height: calc(100% - 56px)
 }
 
+.app-layout .dx-drawer-panel-content {
+  border-right: $base-border-color dashed thin;
+}
+
+.app-layout header {
+  .dx-button.dx-button-has-icon .dx-button-content {
+    // background-color: rgba(235, 189, 52, 0.664)
+    background-color:unset!important;
+  }
+}
+
 .screen-x-small .content-block {
   margin-left: 20px;
   margin-right: 20px;
@@ -61,11 +86,10 @@
   border-left: 0;
 }
 
-.with-footer > .dx-scrollable-wrapper >
-.dx-scrollable-container > .dx-scrollable-content {
+.with-footer>.dx-scrollable-wrapper>.dx-scrollable-container>.dx-scrollable-content {
   height: 100%;
 
-  & > .dx-scrollview-content {
+  &>.dx-scrollview-content {
     display: flex;
     flex-direction: column;
     min-height: 100%;
@@ -74,7 +98,8 @@
 
 $side-panel-min-width: 60px;
 
-html, body {
+html,
+body {
   margin: 0px;
   min-height: 100%;
   height: 100%;
@@ -86,4 +111,8 @@ html, body {
 
 * {
   box-sizing: border-box;
+}
+
+.dx-datagrid .dx-datagrid-header-panel .dx-toolbar {
+  background-color: rgba(105, 81, 11, 0.122)
 }

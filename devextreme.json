@@ -5,29 +5,29 @@
           {
               "command": "build-theme",
               "options": {
-                  "inputFile": "src/themes/metadata.base.json",
-                  "outputFile": "src/themes/generated/theme.base.css"
+                  "inputFile": "themes/metadata.base.json",
+                  "outputFile": "src/styles/theme.base.css"
               }
           },
           {
               "command": "build-theme",
               "options": {
-                  "inputFile": "src/themes/metadata.additional.json",
-                  "outputFile": "src/themes/generated/theme.additional.css"
+                  "inputFile": "themes/metadata.additional.json",
+                  "outputFile": "src/styles/theme.additional.css"
               }
           },
           {
               "command": "export-theme-vars",
               "options": {
-                  "inputFile": "src/themes/metadata.base.json",
-                  "outputFile": "src/themes/generated/variables.base.scss"
+                  "inputFile": "themes/metadata.base.json",
+                  "outputFile": "src/styles/variables.base.scss"
               }
           },
           {
               "command": "export-theme-vars",
               "options": {
-                  "inputFile": "src/themes/metadata.additional.json",
-                  "outputFile": "src/themes/generated/variables.additional.scss"
+                  "inputFile": "themes/metadata.additional.json",
+                  "outputFile": "src/styles/variables.additional.scss"
               }
           }
       ]

@@ -1,6 +1,6 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { LoginLayout } from './layouts';
-import { LoginForm, ResetPasswordForm, ChangePasswordForm, CreateAccountForm } from './components';
+import { LoginForm, ResetPasswordForm, ChangePasswordForm, CreateAccountForm } from './pages/login/index';
 
 export default function UnauthenticatedContent() {
   return (

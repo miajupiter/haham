@@ -28,3 +28,4 @@ yarn-error.log*
 * copy*
 *-lock.json
 test*.js
+*temp*

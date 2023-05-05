@@ -1,4 +1,4 @@
-@import "../../themes/generated/variables.base.scss";
+@import "../../styles/variables.base.scss";
 
 .login-layout {
 
@@ -7,6 +7,8 @@
     margin: auto auto;
     padding: 22px;
     flex-grow: 0;
+    // background-color:  rgba($base-text-color, alpha($base-text-color) * 0.07);
+    background-color: rgba(#114187, 0.2);
 
     .screen-x-small & {
       width: 100%;

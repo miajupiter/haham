@@ -55,12 +55,48 @@
     {
       "key": "$base-border-radius",
       "value": "5px"
+    },
+    {
+        "key": "$overlay-content-bg",
+        "value": "rgba(23, 23, 23, 1)"
+    },
+    {
+        "key": "$toolbar-bg",
+        "value": "rgba(100, 149, 237, 0.21)"
+    },
+    {
+        "key": "$treeview-focused-bg",
+        "value": "rgba(100, 149, 237, 0.38)"
+    },
+    {
+        "key": "$datagrid-focused-border-color",
+        "value": "rgba(80, 119, 190, 1)"
+    },
+    {
+        "key": "$datagrid-search-bg",
+        "value": "rgba(100, 149, 237, 0.61)"
+    },
+    {
+        "key": "$datagrid-selection-bg",
+        "value": "rgba(100, 149, 237, 0.23)"
+    },
+    {
+        "key": "$datagrid-drag-header-border-color",
+        "value": "rgba(100, 149, 237, 0.5)"
+    },
+    {
+        "key": "$datagrid-base-background-color",
+        "value": "rgba(0, 0, 0, 1)"
+    },
+    {
+        "key": "$datagrid-row-alternation-bg",
+        "value": "rgba(14, 14, 20, 1)"
     }
   ],
   "22baseTheme": "material.orange.dark",
-  "baseTheme": "material.teal.dark",
+  "baseTheme": "material.blue.dark",
   "11baseTheme": "generic.darkviolet",
-  "assetsBasePath": "../../../node_modules/devextreme/dist/css/",
+  "assetsBasePath": "../../node_modules/devextreme/dist/css/",
   "outputColorScheme": "base",
   "base": true,
   "widgets": []

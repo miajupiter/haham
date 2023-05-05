@@ -1885,7 +1885,7 @@
   margin: 0;
 }
 .dx-theme-marker {
-  font-family: "dx.material.teal.dark";
+  font-family: "dx.material.blue.dark";
 }
 .dx-theme-accent-as-text-color {
   color: #6495ed!important;
@@ -10801,7 +10801,7 @@
 }
 .dx-toolbar {
   width: 100%;
-  background-color: #000;
+  background-color: rgba(100,149,237,.21);
   color: #fff;
   padding: 0;
   overflow: visible;
@@ -10865,7 +10865,7 @@
   padding-left: 5px;
 }
 .dx-toolbar-background {
-  background-color: #000;
+  background-color: rgba(100,149,237,.21);
 }
 .dx-toolbar-menu-section {
   border-bottom: 1px solid #515159;
@@ -11470,7 +11470,7 @@
   top: 0;
 }
 .dx-popup-wrapper > .dx-overlay-content {
-  background: #000;
+  background: #171717;
   -webkit-box-shadow: 0 11px 15px -7px rgba(0,0,0,.2),0 24px 38px 3px rgba(0,0,0,.14),0 9px 46px 8px rgba(0,0,0,.12);
   box-shadow: 0 11px 15px -7px rgba(0,0,0,.2),0 24px 38px 3px rgba(0,0,0,.14),0 9px 46px 8px rgba(0,0,0,.12);
   border-radius: 5px;
@@ -13015,7 +13015,7 @@
   -webkit-touch-callout: none;
   -webkit-user-drag: none;
   border: 1px solid rgba(0,0,0,.2);
-  background: #000;
+  background: #171717;
   padding: 13px;
   border-radius: 50%;
   -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.25);
@@ -13793,7 +13793,7 @@
 .dx-colorview-palette-cell {
   padding: 1px;
   margin: 0 1px 1px;
-  background-color: #000;
+  background-color: #171717;
   -webkit-box-shadow: 0 0 0 1px #515159;
   box-shadow: 0 0 0 1px #515159;
 }
@@ -13832,7 +13832,7 @@
   padding: 0;
 }
 .dx-colorbox-overlay.dx-overlay-content {
-  background-color: #000;
+  background-color: #171717;
 }
 .dx-rtl .dx-colorbox.dx-state-focused .dx-colorbox-input,
 .dx-rtl.dx-colorbox.dx-state-focused .dx-colorbox-input {
@@ -15765,7 +15765,7 @@
 .dx-datagrid-header-panel {
   border-bottom: 1px solid #515159;
   padding: 0 16px;
-  background-color: #000;
+  background-color: rgba(100,149,237,.21);
 }
 .dx-datagrid-header-panel .dx-apply-button {
   background-color: transparent;
@@ -18126,7 +18126,7 @@ input.dx-hidden {
 .dx-treelist-header-panel {
   border-bottom: 1px solid #515159;
   padding: 0 16px;
-  background-color: #000;
+  background-color: rgba(100,149,237,.21);
 }
 .dx-treelist-header-panel .dx-apply-button {
   background-color: transparent;
@@ -25446,10 +25446,10 @@ input.dx-hidden {
 }
 .dx-diagram-properties-panel,
 .dx-diagram-toolbox-panel {
-  background: #000;
+  background: #171717;
 }
 .dx-diagram-floating-toolbar-container {
-  background: #000;
+  background: #171717;
   -webkit-box-shadow: 0 1px 8px rgba(0,0,0,.175);
   box-shadow: 0 1px 8px rgba(0,0,0,.175);
   border-radius: 5px;
