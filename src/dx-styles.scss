@@ -1,5 +1,6 @@
 @import "./themes/generated/variables.base.scss";
 
+
 .app {
   background-color: darken($base-bg, 5.00);
   display: flex;
@@ -35,7 +36,7 @@
   }
 }
 
-.side-nav-outer-toolbar .dx-drawer {
+.app-layout .dx-drawer {
   height: calc(100% - 56px)
 }
 

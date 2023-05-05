@@ -1,11 +1,67 @@
 {
-  "items": [],
-  "baseTheme": "generic.dark",
-  "22baseTheme": "material.lime.dark",
+  "items": [
+    {
+      "key": "$base-bg",
+      "value": "rgba(0, 0, 0, 1)"
+    },
+    {
+      "key": "$base-accent",
+      "value": "rgba(100, 149, 237, 1)"
+    },
+    {
+      "key": "$base-success",
+      "value": "rgba(139, 195, 74, 1)"
+    },
+    {
+      "key": "$badge-bg",
+      "value": "rgba(29, 242, 22, 1)"
+    },
+    {
+      "key": "$base-focus-bg",
+      "value": "rgba(255, 255, 255, 1)"
+    },
+    {
+      "key": "$pager-page-selected-bg",
+      "value": "rgba(0, 89, 255, 0.48)"
+    },
+    {
+      "key": "$pager-page-selected-color",
+      "value": "rgba(255, 255, 255, 0.94)"
+    },
+    {
+      "key": "$base-hover-bg",
+      "value": "rgba(179, 182, 255, 0.06)"
+    },
+    {
+      "key": "$toast-success-bg",
+      "value": "rgba(83, 99, 219, 1)"
+    },
+    {
+      "key": "$toast-warning-bg",
+      "value": "rgba(204, 187, 135, 1)"
+    },
+    {
+      "key": "$overlay-shader-bg",
+      "value": "rgba(255, 255, 255, 0.38)"
+    },
+    {
+      "key": "$datagrid-row-focused-color",
+      "value": "rgba(255, 255, 255, 0.93)"
+    },
+    {
+      "key": "$datagrid-row-focused-bg",
+      "value": "rgba(100, 149, 237, 0.37)"
+    },
+    {
+      "key": "$base-border-radius",
+      "value": "5px"
+    }
+  ],
+  "22baseTheme": "material.orange.dark",
+  "baseTheme": "material.teal.dark",
   "11baseTheme": "generic.darkviolet",
   "assetsBasePath": "../../../node_modules/devextreme/dist/css/",
   "outputColorScheme": "base",
   "base": true,
-  "widgets": [
-  ]
+  "widgets": []
 }
