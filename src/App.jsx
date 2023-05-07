@@ -1,9 +1,9 @@
 import 'devextreme/dist/css/dx.common.css'
-import './styles/theme.base.css'
-import './styles/theme.additional.css'
+import './assets/styles/theme.base.css'
+import './assets/styles/theme.additional.css'
 import React from 'react'
 import { HashRouter as Router } from 'react-router-dom'
-import './styles/main.scss'
+import './assets/styles/main.scss'
 import LoadPanel from 'devextreme-react/load-panel'
 import { NavigationProvider } from './contexts/navigation'
 import { AuthProvider, useAuth } from './contexts/auth'
@@ -11,14 +11,13 @@ import { useScreenSizeClass } from './utils/media-query'
 import Content from './Content'
 import UnauthenticatedContent from './UnauthenticatedContent'
 
+
 function App() {
   const { user, loading } = useAuth()
-
   if (loading) {
     return <LoadPanel visible={true} />
   }
-
-  if (user) {
+  if (!user) {
     return <Content />
   }
 

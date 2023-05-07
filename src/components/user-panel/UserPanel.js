@@ -1,18 +1,20 @@
-import React, { useMemo } from 'react';
-import { useNavigate } from "react-router-dom";
-import ContextMenu, { Position } from 'devextreme-react/context-menu';
-import List from 'devextreme-react/list';
-import { useAuth } from '../../contexts/auth';
-import './UserPanel.scss';
-
+import React, { useMemo, useCallback } from 'react'
+import { useNavigate } from "react-router-dom"
+import ContextMenu, { Position } from 'devextreme-react/context-menu'
+import List from 'devextreme-react/list'
+import { useAuth } from '../../contexts/auth'
+import './UserPanel.scss'
 
 export default function UserPanel({ menuMode }) {
-  const { user, signOut } = useAuth();
-  const navigate = useNavigate();
+  const { user, signOut } = useAuth()
+  const { navigate } = useNavigate()
 
-  function navigateToProfile() {
-    navigate("/profile");
-  }
+  const navigateToProfile = useCallback(() => navigate("/profile"), [navigate])
+
+  // function navigateToProfile() {
+  //   navigate("/profile")
+  // }
+  
   const menuItems = useMemo(() => ([
     {
       text: 'Profile',
@@ -24,7 +26,7 @@ export default function UserPanel({ menuMode }) {
       icon: 'runner',
       onClick: signOut
     }
-  ]), [signOut]);
+  ]), [signOut, navigateToProfile])
   return (
     <div className={'user-panel'}>
       <div className={'user-info'}>
@@ -54,5 +56,5 @@ export default function UserPanel({ menuMode }) {
         <List className={'dx-toolbar-menu-action'} items={menuItems} />
       )}
     </div>
-  );
+  )
 }

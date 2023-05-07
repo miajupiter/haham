@@ -8,12 +8,11 @@ function AuthProvider(props) {
 
   useEffect(() => {
     (async function () {
-      const result = await getUser()
-      if (result.isOk) {
-        setUser(result.data)
-      }
-
-      setLoading(false)
+        const result = await getUser()
+        if (result.isOk) {
+          setUser(result.data)
+        }
+        setLoading(false)
     })()
   }, [])
 

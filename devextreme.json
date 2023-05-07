@@ -6,28 +6,28 @@
               "command": "build-theme",
               "options": {
                   "inputFile": "themes/metadata.base.json",
-                  "outputFile": "src/styles/theme.base.css"
+                  "outputFile": "src/assets/styles/theme.base.css"
               }
           },
           {
               "command": "build-theme",
               "options": {
                   "inputFile": "themes/metadata.additional.json",
-                  "outputFile": "src/styles/theme.additional.css"
+                  "outputFile": "src/assets/styles/theme.additional.css"
               }
           },
           {
               "command": "export-theme-vars",
               "options": {
                   "inputFile": "themes/metadata.base.json",
-                  "outputFile": "src/styles/variables.base.scss"
+                  "outputFile": "src/assets/styles/variables.base.scss"
               }
           },
           {
               "command": "export-theme-vars",
               "options": {
                   "inputFile": "themes/metadata.additional.json",
-                  "outputFile": "src/styles/variables.additional.scss"
+                  "outputFile": "src/assets/styles/variables.additional.scss"
               }
           }
       ]

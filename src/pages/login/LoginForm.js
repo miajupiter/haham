@@ -73,7 +73,7 @@ export default function LoginForm() {
               {
                 loading
                   ? <LoadIndicator width={'24px'} height={'24px'} visible={true} />
-                  : 'Sign In'
+                  : 'Log in'
               }
             </span>
           </ButtonOptions>

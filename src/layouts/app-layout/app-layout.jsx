@@ -10,6 +10,12 @@ import { useMenuPatch } from '../../utils/patches'
 import appInfo from '../../app-info'
 
 
+const MenuStatus = {
+  Closed: 1,
+  Opened: 2,
+  TemporaryOpened: 3
+}
+
 
 
 export default function AppLayout({ title, children }) {
@@ -45,7 +51,7 @@ export default function AppLayout({ title, children }) {
         : prevMenuStatus
     )
     return menuStatus === MenuStatus.Closed ? true : false
-  }, [isLarge])
+  }, [isLarge, menuStatus])
 
   const onNavigationChanged = useCallback(({ itemData, event, node }) => {
     if (menuStatus === MenuStatus.Closed || !itemData.path || node.selected) {
@@ -110,10 +116,4 @@ export default function AppLayout({ title, children }) {
 
     </div>
   )
-}
-
-const MenuStatus = {
-  Closed: 1,
-  Opened: 2,
-  TemporaryOpened: 3
 }

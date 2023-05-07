@@ -93,10 +93,8 @@
         "value": "rgba(14, 14, 20, 1)"
     }
   ],
-  "22baseTheme": "material.orange.dark",
   "baseTheme": "material.blue.dark",
-  "11baseTheme": "generic.darkviolet",
-  "assetsBasePath": "../../node_modules/devextreme/dist/css/",
+  "assetsBasePath": "../../../node_modules/devextreme/dist/css/",
   "outputColorScheme": "base",
   "base": true,
   "widgets": []
