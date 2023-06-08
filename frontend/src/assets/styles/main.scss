@@ -1,4 +1,5 @@
 @import "./variables.base.scss";
+@import "./dataGrid.scss";
 
 body {
   margin: 0;
@@ -23,29 +24,6 @@ input:-webkit-autofill:active {
   -webkit-box-shadow:none;
 }
 
-// input:-webkit-autofill,
-// input:-webkit-autofill:hover, 
-// input:-webkit-autofill:focus, 
-// input:-webkit-autofill:active{
-//     -webkit-box-shadow:transparent!important; // 0 0 0 30px red inset !important;
-// }
-
-// input:-webkit-autofill{
-//     -webkit-text-fill-color: currentColor;
-// }
-
-// @-webkit-keyframes autofill {
-//   0%,100% {
-//       color: #666;
-//       background: transparent;
-//   }
-// }
-
-// input:-webkit-autofill {
-//   -webkit-animation-delay: 1s; /* Safari support - any positive time runs instantly */
-//   -webkit-animation-name: autofill;
-//   -webkit-animation-fill-mode: both;
-// }
 .app {
   background-color: darken($base-bg, 5.00);
   display: flex;
@@ -57,9 +35,9 @@ input:-webkit-autofill:active {
     flex-grow: 1;
 
     h2 {
-      font-size: 30px;
-      margin-top: 20px;
-      margin-bottom: 20px;
+      font-size: 22px;
+      margin-top: 6px;
+      margin-bottom: 6px;
     }
   }
 
@@ -75,9 +53,9 @@ input:-webkit-autofill:active {
   }
 
   .content-block {
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 20px;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-top: 6px;
   }
 }
 
@@ -144,12 +122,13 @@ body {
   box-sizing: border-box;
 }
 
-.dx-datagrid .dx-datagrid-header-panel .dx-toolbar {
-  background-color: rgba(105, 81, 11, 0.122)
-}
 
 .flex-between{
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.temp1 {
+  color:rgb(15, 16, 31);
 }

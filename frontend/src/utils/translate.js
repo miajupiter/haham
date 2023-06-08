@@ -46,10 +46,11 @@ export function initialLang(lang) {
   if (languageList.findIndex(e => e.lang === localStorage.getItem('lang')) < 0) {
     localStorage.setItem('lang', 'en')
   }
-
+  
+  locale(localStorage.getItem('lang'))
   loadMessages(zzDictionary)
 
-  locale(localStorage.getItem('lang'))
+  
 }
 
 initialLang()

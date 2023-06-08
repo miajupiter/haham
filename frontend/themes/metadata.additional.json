@@ -1,8 +1,8 @@
 {
   "items": [],
-  "baseTheme": "generic.dark",
+  "baseTheme": "generic.light",
   "assetsBasePath": "../../../node_modules/devextreme/dist/css/",
-  "outputColorScheme": "additional",
+  "outputColorScheme": "light",
   "makeSwatch": true,
   "base": true,
   "widgets": [

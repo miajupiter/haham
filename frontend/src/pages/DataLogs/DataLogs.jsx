@@ -20,7 +20,7 @@ import { t } from '../../utils/translate'
 export default function DataLogs() {
   // const gridRef = useRef(null)
   const [pageIndex, setPageIndex] = useState(0) // 0 based page number
-  const [pageSize, setPageSize] = useState(5)
+  const [pageSize, setPageSize] = useState(50)
   const [pageCount, setPageCount] = useState(0)
   const [totalCount, setTotalCount] = useState(0)
 
@@ -42,7 +42,7 @@ export default function DataLogs() {
   //   'userData'
   // ]
 
-  var customDataSource = new CustomStore({
+  const customDataSource = new CustomStore({
     key: '_id',
     // keyType: 'string',
     // loadMode: 'raw',
@@ -50,38 +50,28 @@ export default function DataLogs() {
 
     load: (loadOptions) => {
       console.log('loadOptions:', loadOptions)
-      let params= {
+      let params = {
         page: pageIndex + 1,
         pageSize: pageSize,
       }
       if (loadOptions) {
-        if (loadOptions.take) params.pageSize=loadOptions.take
+        if (loadOptions.take) params.pageSize = loadOptions.take
         if (loadOptions.skip) {
-          params.page=Math.round(loadOptions.skip / params.pageSize)+1
+          params.page = Math.round(loadOptions.skip / params.pageSize) + 1
         }
       }
 
-
       return api
         .getData('/dataLog', {
-          params:params,
+          params: params,
           // params: { page: pageIndex + 1, pageSize: pageSize },
         })
         .then((response) => {
           let obj = {
             data: response.data && response.data.docs,
             totalCount: response.data && response.data.recordCount,
-            // pageCount: response.data.pageCount,
-            // pageSize: response.data.pageSize,
-            // pageIndex: response.data.page - 1,
-            //take:response.data.pageSize,
-            //skip:(response.data.page - 1) * response.data.pageSize,
           }
-          //   console.log('sonuc:', obj)
-          // setPageIndex(response.data.page - 1)
-          // setPageSize(response.data.pageSize)
-          // setPageCount(response.data.pageCount)
-          // setTotalCount(response.data.recordCount)
+          setTotalCount(response.data.recordCount)
 
           return obj
           // return response.data.docs
@@ -99,23 +89,26 @@ export default function DataLogs() {
   return (
     <React.Fragment>
       <h2 className={'content-block'}>Data Logs</h2>
-      <p className={'content-block'}>
-        pageIndex:{pageIndex} , pageSize:{pageSize} , totalCount:{totalCount}
-      </p>
       <div className={'content-block'}>
         <DataGrid
           // ref={gridRef}
           className={'dx-card wide-card'}
           dataSource={customDataSource}
-          focusedRowEnabled={true}
-          defaultFocusedRowIndex={0}
-          columnAutoWidth={false}
+          highlightChanges={true}
+          hoverStateEnabled={true}
+          showBorders={true}
+          showRowLines={false}
+          showColumnLines={false}
+          rowAlternationEnabled={true}
+          focusedRowEnabled={false}
+          // defaultFocusedRowIndex={0}
+          columnAutoWidth={true}
           columnHidingEnabled={true}
           columnResizingMode='widget'
           allowColumnResizing={true}
           // dateSerializationFormat={'yyyy-MM-dd hh:mm:ss'}
           pager={{
-            allowedPageSizes: [5, 10, 20, 50, 'all'],
+            allowedPageSizes: [10, 20, 50, 'all'],
             displayMode: 'full',
             showInfo: true,
             showNavigationButtons: true,
@@ -123,15 +116,12 @@ export default function DataLogs() {
             visible: true,
             infoText: t('Page {0} of {1} ({2} items)'),
             label: t('Page Navigation'),
-
           }}
-          highlightChanges={true}
-          hoverStateEnabled={true}
-          // paging={{
-          //   enabled: true,
-          //   pageIndex: pageIndex,
-          //   pageSize: pageSize,
-          // }}
+          paging={{
+            enabled: true,
+            pageIndex: pageIndex,
+            pageSize: pageSize,
+          }}
           // onPagingChange={(e,d) => {
           //   console.log('onPagingChange e:', e,d)
           // }}
@@ -148,9 +138,6 @@ export default function DataLogs() {
             filtering: true,
             sorting: true,
           }}
-          showBorders={true}
-          showRowLines={true}
-          showColumnLines={true}
           // bindingOptions={}
           allowColumnReordering={true}
           sorting={{
@@ -158,7 +145,7 @@ export default function DataLogs() {
             descendingText: t('Sort Descending'),
             clearText: t('Clear Sorting'),
           }}
-          style={{ borderRadius: '5px', width: '100%' }}
+          style={{ borderRadius: '15px', width: '100%' }}
           columnChooser={{
             enabled: true,
             // mode: 'select',
@@ -168,7 +155,7 @@ export default function DataLogs() {
             allowSorting: true,
           }}
           stateStoring={{
-            enabled: false,
+            enabled: true,
             type: 'localStorage',
             storageKey: `dataGrid_${window.location.hash}`,
           }}
@@ -179,7 +166,7 @@ export default function DataLogs() {
           keyboardNavigation={{
             enterKeyAction: 'moveFocus',
             enabled: true,
-            enterKeyDirection: 'row',
+            enterKeyDirection: 'column',
           }}
           // onPagingChange={(val) => {
           //   console.log('onPagingChange', val)
@@ -191,39 +178,51 @@ export default function DataLogs() {
             selectAllMode: 'page',
             mode: 'multiple',
           }}
-          wordWrapEnabled={true}
+          wordWrapEnabled={false}
+          height={'auto'}
+          filterRow={{ visible: true }}
+          headerFilter={{ visible: true }}
+          toolbar={{visible:true,items:['exportButton','addRowButton','columnChooserButton','revertButton','saveButton','groupPanel']}}
+        
+          editing={{
+            allowAdding: true,
+            allowDeleting: true,
+            allowUpdating: true,
+            // changes: {
+            //   data: null,
+            //   insertAfterKey: null,
+            //   insertBeforeKey: null,
+            //   key: null,
+            //   type: null,
+            // },
+            confirmDelete: true,
+            editColumnName: null,
+            editRowKey: null,
+            form: null,
+            mode: 'row',
+            newRowPosition: 'last',
+            popup: null,
+            refreshMode: 'reshape',
+            selectTextOnEditStart: false,
+            startEditAction: 'dblClick',
+            texts: {
+              addRow: t('Add a row'),
+              cancelAllChanges: t('Discard changes'),
+              cancelRowChanges: t('Cancel'),
+              confirmDeleteMessage:
+                t('Are you sure you want to delete this record?'),
+              confirmDeleteTitle: '',
+              deleteRow: t('Delete'),
+              editRow: t('Edit'),
+              saveAllChanges: t('Save changes'),
+              saveRowChanges: t('Save'),
+              undeleteRow: t('Undelete'),
+              validationCancelChanges: t('Cancel changes'),
+            },
+            useIcons: true,
+          }}
         >
-          <Paging
-            defaultPageIndex={0}
-            defaultPageSize={5}
-            // pageIndex={pageIndex}
-            // pageSize={pageSize}
-            onPageIndexChange={(e) => {
-              console.log('onPageIndexChange e:', e)
-            //  setPageIndex(e)
-              // customDataSource.load({ pageIndex: e })
-            }}
-            onPageSizeChange={(e) => {
-              console.log('onPageSizeChange e:', e)
-              // setPageIndex(0)
-              // setPageSize(e)
-              //customDataSource.load()
-            }}
-            enabled={true}
-            // ref={gridRef}
-          />
-
-          {/* <Pager
-            allowedPageSizes={[5, 10, 20, 50, 'all']}
-            showPageSizeSelector={true}
-            showInfo={true}
-            displayMode={'full'}
-            visible={true}
-            showNavigationButtons={true}
-            infoText={t('Page {0} of {1} ({2} items)')}
-            label={t('Page Navigation')}
-          /> */}
-          <FilterRow visible={false} />
+          {/* <FilterRow visible={true}  /> */}
 
           {/* <Column dataField={'Task_ID'} width={90} hidingPriority={2} /> */}
           <Column
@@ -234,7 +233,6 @@ export default function DataLogs() {
             format={'yyyy-MM-dd hh:mm:ss'}
             hidingPriority={3}
             allowHeaderFiltering={true}
-            name={'tarih'}
           />
           <Column
             dataField={'_id'}

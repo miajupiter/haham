@@ -14895,7 +14895,7 @@
   border-bottom: 1px solid #515159;
 }
 .dx-sortable-dragging > div > .dx-gridbase-container > .dx-datagrid-rowsview {
-  border-color: rgba(100,149,237,.5);
+  border-color: rgba(148,148,68,.64);
 }
 .dx-datagrid .dx-sort-up {
   font: 14px/1 DXIcons;
@@ -14923,7 +14923,7 @@
 }
 .dx-datagrid .dx-datagrid-header-panel.dx-state-focused .dx-datagrid-group-panel .dx-group-panel-item:focus,
 .dx-datagrid .dx-datagrid-header-panel.dx-state-focused .dx-datagrid-group-panel .dx-header-filter:focus {
-  outline: rgb(80,119,190) solid 2px;
+  outline: rgba(255,165,0,.47) solid 2px;
   outline-offset: -2px;
 }
 .dx-datagrid .dx-datagrid-header-panel.dx-state-focused .dx-datagrid-group-panel .dx-header-filter:focus {
@@ -14935,7 +14935,7 @@
 }
 .dx-datagrid .dx-datagrid-headers.dx-state-focused .dx-header-row td .dx-header-filter:focus,
 .dx-datagrid .dx-datagrid-headers.dx-state-focused .dx-header-row td:focus {
-  outline: rgb(80,119,190) solid 2px;
+  outline: rgba(255,165,0,.47) solid 2px;
   outline-offset: 2px;
 }
 .dx-datagrid .dx-datagrid-headers.dx-state-focused .dx-header-row td:focus {
@@ -14943,17 +14943,17 @@
 }
 .dx-datagrid .dx-header-filter {
   position: relative;
-  color: rgba(255,255,255,.6);
+  color: #f7f4f8;
   font: 14px/1 DXIcons;
 }
 .dx-datagrid .dx-header-filter::before {
   content: "\f050";
 }
 .dx-datagrid .dx-header-filter-empty {
-  color: rgba(255,255,255,.38);
+  color: rgba(247,244,248,.38);
 }
 .dx-datagrid .dx-datagrid-content-fixed .dx-datagrid-table .dx-col-fixed {
-  background-color: #000;
+  background-color: #0f101f;
 }
 .dx-datagrid .dx-datagrid-headers .dx-row td.dx-pointer-events-none,
 .dx-datagrid .dx-datagrid-rowsview .dx-data-row td.dx-pointer-events-none,
@@ -14978,7 +14978,7 @@
   border-right: none;
 }
 .dx-datagrid .dx-datagrid-rowsview.dx-state-focused .dx-data-row > td.dx-command-edit > a.dx-link:focus {
-  outline: rgb(80,119,190) solid 2px;
+  outline: rgba(255,165,0,.47) solid 2px;
   outline-offset: 2px;
 }
 .dx-datagrid .dx-datagrid-rowsview.dx-state-focused .dx-data-row.dx-row-focused > td.dx-command-edit > a.dx-link:focus {
@@ -14986,7 +14986,7 @@
   outline-offset: 0;
 }
 .dx-datagrid .dx-datagrid-rowsview .dx-datagrid-edit-form {
-  background-color: #000;
+  background-color: #0f101f;
 }
 .dx-datagrid .dx-datagrid-rowsview .dx-virtual-row > td {
   position: relative;
@@ -15033,7 +15033,7 @@
 .dx-datagrid-filter-panel.dx-state-focused .dx-datagrid-filter-panel-clear-filter:focus,
 .dx-datagrid-filter-panel.dx-state-focused .dx-datagrid-filter-panel-text:focus,
 .dx-datagrid-filter-panel.dx-state-focused .dx-icon-filter:focus {
-  outline: rgb(80,119,190) solid 2px;
+  outline: rgba(255,165,0,.47) solid 2px;
   outline-offset: 3px;
 }
 .dx-datagrid-form-buttons-container {
@@ -15051,7 +15051,7 @@
   content: "\f06c";
 }
 .dx-datagrid-edit-popup .dx-error-message {
-  background-color: #922820;
+  background-color: #982f2d;
   white-space: normal;
   word-wrap: break-word;
   color: #fff;
@@ -15141,7 +15141,7 @@
 }
 .dx-datagrid-container.dx-filter-menu .dx-menu-item-content .dx-icon,
 .dx-datagrid.dx-filter-menu .dx-menu-item-content .dx-icon {
-  color: rgba(255,255,255,.54);
+  color: rgba(182,237,130,.73);
   width: 18px;
   height: 18px;
   background-position: 0 0;
@@ -15371,13 +15371,13 @@
 }
 .dx-datagrid {
   color: #fff;
-  background-color: #000;
+  background-color: #0f101f;
   line-height: inherit;
 }
 .dx-datagrid .dx-row-alt > td {
-  background-color: #0e0e14;
-  border-top: 1px solid #0e0e14;
-  border-bottom: 1px solid #0e0e14;
+  background-color: #18192a;
+  border-top: 1px solid #18192a;
+  border-bottom: 1px solid #18192a;
 }
 .dx-datagrid .dx-row-alt.dx-row:not(.dx-row-removed) {
   border-bottom-color: transparent;
@@ -15409,7 +15409,7 @@
   content: "\f00a";
 }
 .dx-datagrid .dx-error-row .dx-error-message {
-  background-color: #922820;
+  background-color: #982f2d;
   white-space: normal;
   word-wrap: break-word;
   padding: 14px 35px 14px 14px;
@@ -15612,7 +15612,7 @@
 .dx-datagrid-column-chooser .dx-overlay-content .dx-popup-content .dx-column-chooser-item {
   margin: 2px 2px 8px;
   background-color: #080808;
-  color: rgba(255,255,255,.6);
+  color: #f7f4f8;
   font-weight: 500;
   font-size: 14px;
   padding: 14px;
@@ -15621,13 +15621,13 @@
   box-shadow: 0 0 1px rgba(0,0,0,.3),0 1px 3px rgba(0,0,0,.4);
 }
 .dx-datagrid-drag-header {
-  border-color: rgba(100,149,237,.5);
+  border-color: rgba(148,148,68,.64);
   -webkit-box-shadow: 0 0 1px rgba(0,0,0,.3),0 1px 3px rgba(0,0,0,.4);
   box-shadow: 0 0 1px rgba(0,0,0,.3),0 1px 3px rgba(0,0,0,.4);
-  color: rgba(255,255,255,.6);
+  color: #f7f4f8;
   font-weight: 500;
   padding: 20px;
-  background-color: #000;
+  background-color: #0f101f;
   line-height: 16px;
   font-size: 14px;
 }
@@ -15653,7 +15653,7 @@
   position: absolute;
   bottom: 0;
   height: 2px;
-  background-color: #5077be;
+  background-color: rgba(255,165,0,.47);
   left: 0;
   right: 1px;
 }
@@ -15662,7 +15662,7 @@
   color: #fff;
 }
 .dx-datagrid-headers {
-  color: rgba(255,255,255,.6);
+  color: #f7f4f8;
   -ms-touch-action: pinch-zoom;
   touch-action: pinch-zoom;
   border-bottom: 1px solid #515159;
@@ -15707,7 +15707,7 @@
   border-right: none;
 }
 .dx-datagrid-filter-row {
-  background-color: #000;
+  background-color: #0c0c18;
 }
 .dx-datagrid-filter-row .dx-menu {
   margin-left: 0;
@@ -15735,7 +15735,7 @@
 }
 .dx-datagrid-filter-range-overlay .dx-overlay-content {
   overflow: inherit;
-  background-color: #000;
+  background-color: #0c0c18;
   -webkit-box-shadow: 0 0 1px rgba(0,0,0,.3),0 1px 3px rgba(0,0,0,.4);
   box-shadow: 0 0 1px rgba(0,0,0,.3),0 1px 3px rgba(0,0,0,.4);
 }
@@ -15890,7 +15890,7 @@
 }
 .dx-datagrid-rowsview .dx-master-detail-row:not(.dx-datagrid-edit-form) .dx-master-detail-cell,
 .dx-datagrid-rowsview .dx-master-detail-row:not(.dx-datagrid-edit-form) > .dx-datagrid-group-space {
-  background-color: #000;
+  background-color: #0c0c18;
 }
 .dx-datagrid-rowsview .dx-adaptive-detail-row.dx-selection:hover:not(.dx-edit-row) .dx-cell-modified,
 .dx-datagrid-rowsview .dx-adaptive-detail-row.dx-selection:not(.dx-edit-row) .dx-cell-modified,
@@ -15923,7 +15923,7 @@
   background-color: #515159;
   border-top: 1px solid #515159;
   border-bottom: 1px solid #515159;
-  color: rgba(255,255,255,.6);
+  color: #f7f4f8;
 }
 .dx-datagrid-rowsview .dx-adaptive-detail-row .dx-field-item-label {
   padding-top: 0;
@@ -15954,69 +15954,69 @@
 }
 .dx-datagrid-rowsview .dx-row-focused.dx-data-row .dx-command-edit .dx-link,
 .dx-datagrid-rowsview .dx-row-focused.dx-data-row > td:not(.dx-focused):not(.dx-cell-modified) {
-  background-color: rgba(100,149,237,.37);
-  color: rgba(255,255,255,.93);
+  background-color: rgba(255,165,0,.47);
+  color: #dbdbdb;
 }
 .dx-datagrid-rowsview .dx-row-focused.dx-data-row .dx-command-edit .dx-link .dx-datagrid-group-closed,
 .dx-datagrid-rowsview .dx-row-focused.dx-data-row .dx-command-edit .dx-link .dx-datagrid-group-opened,
 .dx-datagrid-rowsview .dx-row-focused.dx-data-row > td:not(.dx-focused):not(.dx-cell-modified) .dx-datagrid-group-closed,
 .dx-datagrid-rowsview .dx-row-focused.dx-data-row > td:not(.dx-focused):not(.dx-cell-modified) .dx-datagrid-group-opened {
-  color: rgba(255,255,255,.93);
+  color: #dbdbdb;
 }
 .dx-datagrid-rowsview .dx-row-focused.dx-data-row .dx-command-edit .dx-link:focus {
-  background-color: #000;
+  background-color: #0f101f;
   color: #6495ed;
 }
 .dx-datagrid-rowsview .dx-row-focused.dx-data-row > td,
 .dx-datagrid-rowsview .dx-row-focused.dx-data-row > tr:last-child > td {
-  border-bottom: 2px solid #5077be;
+  border-bottom: 2px solid rgba(255,165,0,.47);
 }
 .dx-datagrid-rowsview .dx-row-focused.dx-data-row:not(.dx-row-lines) > td,
 .dx-datagrid-rowsview .dx-row-focused.dx-data-row:not(.dx-row-lines) > tr:first-child > td {
-  border-top: 1px solid #5077be;
-  border-bottom: 1px solid #5077be;
+  border-top: 1px solid rgba(255,165,0,.47);
+  border-bottom: 1px solid rgba(255,165,0,.47);
 }
 .dx-datagrid-rowsview .dx-row-focused.dx-data-row.dx-edit-row > td.dx-editor-cell:not(.dx-command-select),
 .dx-datagrid-rowsview .dx-row-focused.dx-data-row.dx-edit-row > tr > td.dx-editor-cell:not(.dx-command-select) {
-  background-color: #000;
+  background-color: #0f101f;
   color: #fff;
 }
 .dx-datagrid-rowsview .dx-row-focused.dx-group-row {
-  background-color: rgba(100,149,237,.37);
-  color: rgba(255,255,255,.93);
+  background-color: rgba(255,165,0,.47);
+  color: #dbdbdb;
 }
 .dx-datagrid-rowsview .dx-row-focused.dx-group-row .dx-datagrid-group-closed,
 .dx-datagrid-rowsview .dx-row-focused.dx-group-row .dx-datagrid-group-opened {
-  color: rgba(255,255,255,.93);
+  color: #dbdbdb;
 }
 .dx-datagrid-rowsview .dx-selection.dx-row:not(.dx-row-focused) > td,
 .dx-datagrid-rowsview .dx-selection.dx-row:not(.dx-row-focused) > tr > td,
 .dx-datagrid-rowsview .dx-selection.dx-row:not(.dx-row-focused):hover > td,
 .dx-datagrid-rowsview .dx-selection.dx-row:not(.dx-row-focused):hover > tr > td {
-  background-color: rgba(100,149,237,.23);
-  color: #fff;
+  background-color: rgba(47,70,90,.59);
+  color: #dbdbdb;
 }
 .dx-datagrid-rowsview .dx-selection.dx-row:not(.dx-row-focused) > td.dx-datagrid-group-space,
 .dx-datagrid-rowsview .dx-selection.dx-row:not(.dx-row-focused) > tr > td.dx-datagrid-group-space,
 .dx-datagrid-rowsview .dx-selection.dx-row:not(.dx-row-focused):hover > td.dx-datagrid-group-space,
 .dx-datagrid-rowsview .dx-selection.dx-row:not(.dx-row-focused):hover > tr > td.dx-datagrid-group-space {
-  border-right-color: rgba(100,149,237,.23);
+  border-right-color: rgba(47,70,90,.59);
 }
 .dx-datagrid-rowsview .dx-selection.dx-row:not(.dx-row-focused) > td.dx-pointer-events-none,
 .dx-datagrid-rowsview .dx-selection.dx-row:not(.dx-row-focused) > tr > td.dx-pointer-events-none,
 .dx-datagrid-rowsview .dx-selection.dx-row:not(.dx-row-focused):hover > td.dx-pointer-events-none,
 .dx-datagrid-rowsview .dx-selection.dx-row:not(.dx-row-focused):hover > tr > td.dx-pointer-events-none {
-  border-left-color: #515159;
-  border-right-color: #515159;
+  border-left-color: rgba(148,148,68,.64);
+  border-right-color: rgba(148,148,68,.64);
 }
 .dx-datagrid-rowsview .dx-selection.dx-row:not(.dx-row-focused):hover:not(.dx-row-lines) > td,
 .dx-datagrid-rowsview .dx-selection.dx-row:not(.dx-row-focused):not(.dx-row-lines) > td {
-  border-bottom: 1px solid rgba(100,149,237,.23);
-  border-top: 1px solid rgba(100,149,237,.23);
+  border-bottom: 1px solid rgba(47,70,90,.59);
+  border-top: 1px solid rgba(47,70,90,.59);
 }
 .dx-datagrid-rowsview .dx-selection.dx-row:not(.dx-row-focused).dx-row-lines > td,
 .dx-datagrid-rowsview .dx-selection.dx-row:not(.dx-row-focused):hover.dx-row-lines > td {
-  border-bottom-color: #515159;
+  border-bottom-color: rgba(148,148,68,.64);
 }
 .dx-datagrid-rowsview.dx-scrollable-scrollbars-alwaysvisible.dx-scrollable-both .dx-scrollable-wrapper .dx-scrollable-container .dx-scrollable-content {
   padding-right: 0;
@@ -16053,7 +16053,7 @@
 }
 .dx-datagrid-search-text {
   color: rgba(0,0,0,.87);
-  background-color: rgba(100,149,237,.61);
+  background-color: #18192a;
 }
 .dx-datagrid-nodata {
   color: #fff;
@@ -16061,7 +16061,7 @@
 }
 .dx-datagrid-bottom-load-panel {
   border-top: 1px solid #515159;
-  background-color: #000;
+  background-color: #0f101f;
 }
 .dx-datagrid-summary-item {
   color: rgba(255,255,255,.7);
@@ -16150,19 +16150,19 @@
 .dx-rtl .dx-datagrid-rowsview .dx-selection.dx-row > tr > td,
 .dx-rtl .dx-datagrid-rowsview .dx-selection.dx-row:hover > td,
 .dx-rtl .dx-datagrid-rowsview .dx-selection.dx-row:hover > tr > td {
-  border-right-color: #515159;
+  border-right-color: rgba(148,148,68,.64);
 }
 .dx-rtl .dx-datagrid-rowsview .dx-selection.dx-row > td:not(.dx-focused).dx-datagrid-group-space,
 .dx-rtl .dx-datagrid-rowsview .dx-selection.dx-row > tr > td:not(.dx-focused).dx-datagrid-group-space,
 .dx-rtl .dx-datagrid-rowsview .dx-selection.dx-row:hover > td:not(.dx-focused).dx-datagrid-group-space,
 .dx-rtl .dx-datagrid-rowsview .dx-selection.dx-row:hover > tr > td:not(.dx-focused).dx-datagrid-group-space {
-  border-left-color: rgba(100,149,237,.23);
+  border-left-color: rgba(47,70,90,.59);
 }
 .dx-rtl .dx-datagrid-rowsview .dx-selection.dx-row > td.dx-pointer-events-none,
 .dx-rtl .dx-datagrid-rowsview .dx-selection.dx-row > tr > td.dx-pointer-events-none,
 .dx-rtl .dx-datagrid-rowsview .dx-selection.dx-row:hover > td.dx-pointer-events-none,
 .dx-rtl .dx-datagrid-rowsview .dx-selection.dx-row:hover > tr > td.dx-pointer-events-none {
-  border-left-color: #515159;
+  border-left-color: rgba(148,148,68,.64);
 }
 .dx-rtl .dx-datagrid-rowsview.dx-scrollable-scrollbars-alwaysvisible.dx-scrollable-both .dx-scrollable-wrapper .dx-scrollable-container .dx-scrollable-content {
   padding-left: 0;
@@ -16224,7 +16224,7 @@
   touch-action: pinch-zoom;
 }
 .dx-datagrid-group-panel .dx-group-panel-message {
-  color: rgba(255,255,255,.6);
+  color: #f7f4f8;
   font-weight: 500;
   padding: 7px 0;
   border-top: 1px solid transparent;
@@ -16232,23 +16232,23 @@
 }
 .dx-datagrid-group-panel .dx-group-panel-item {
   margin-right: 10px;
-  color: rgba(255,255,255,.6);
+  color: #f7f4f8;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
-  background: #1f1f1f;
+  background: #232548;
   border-radius: 16px;
   padding: 8px 10px;
 }
 .dx-datagrid-group-panel .dx-block-separator {
   margin-right: 10px;
-  color: rgba(255,255,255,.6);
+  color: #f7f4f8;
   font-weight: 500;
   padding: 7px;
-  background-color: #1f1f1f;
+  background-color: #232548;
 }
 .dx-datagrid-group-panel .dx-sort {
-  color: rgba(255,255,255,.54);
+  color: rgba(182,237,130,.73);
 }
 .dx-datagrid-rowsview .dx-row.dx-group-row:first-child {
   border-top: none;
@@ -16258,8 +16258,8 @@
   font-weight: 700;
 }
 .dx-datagrid-rowsview .dx-row.dx-group-row:not(.dx-row-focused) {
-  color: rgba(255,255,255,.54);
-  background-color: #000;
+  color: #dbdbdb;
+  background-color: #0f101f;
 }
 .dx-datagrid-rowsview .dx-row.dx-group-row td {
   border-top-color: #515159;
@@ -16295,7 +16295,7 @@
   border-bottom: 1px solid #515159;
 }
 .dx-row.dx-datagrid-group-footer > td {
-  background-color: #000;
+  background-color: #0f101f;
   border-top: 1px solid #515159;
   border-left-width: 0;
   border-right-width: 0;
@@ -17142,7 +17142,7 @@ input.dx-hidden {
   white-space: normal;
   line-height: normal;
   color: #fff;
-  background-color: #000;
+  background-color: #0f101f;
 }
 .dx-treelist-rowsview .dx-treelist-best-fit.dx-treelist-cell-expandable,
 .dx-treelist-rowsview .dx-treelist-table:not(.dx-treelist-table-fixed) .dx-treelist-cell-expandable {
@@ -17187,7 +17187,7 @@ input.dx-hidden {
   border-bottom: 1px solid #515159;
 }
 .dx-sortable-dragging > div > .dx-gridbase-container > .dx-treelist-rowsview {
-  border-color: rgba(100,149,237,.5);
+  border-color: rgba(148,148,68,.64);
 }
 .dx-treelist .dx-column-lines > td:first-child {
   border-left: none;
@@ -17227,7 +17227,7 @@ input.dx-hidden {
 }
 .dx-treelist-container .dx-treelist-headers.dx-state-focused .dx-header-row td .dx-header-filter:focus,
 .dx-treelist-container .dx-treelist-headers.dx-state-focused .dx-header-row td:focus {
-  outline: rgb(80,119,190) solid 2px;
+  outline: rgba(255,165,0,.47) solid 2px;
 }
 .dx-treelist-container .dx-treelist-headers.dx-state-focused .dx-header-row td:focus {
   outline-offset: -2px;
@@ -17237,17 +17237,17 @@ input.dx-hidden {
 }
 .dx-treelist-container .dx-header-filter {
   position: relative;
-  color: rgba(255,255,255,.6);
+  color: #f7f4f8;
   font: 14px/1 DXIcons;
 }
 .dx-treelist-container .dx-header-filter::before {
   content: "\f050";
 }
 .dx-treelist-container .dx-header-filter-empty {
-  color: rgba(255,255,255,.38);
+  color: rgba(247,244,248,.38);
 }
 .dx-treelist-container .dx-treelist-content-fixed .dx-treelist-table .dx-col-fixed {
-  background-color: #000;
+  background-color: #0f101f;
 }
 .dx-treelist-container .dx-datagrid-rowsview .dx-header-row td.dx-pointer-events-none,
 .dx-treelist-container .dx-datagrid-rowsview .dx-virtual-row td.dx-pointer-events-none,
@@ -17272,7 +17272,7 @@ input.dx-hidden {
   border-right: none;
 }
 .dx-treelist-container .dx-treelist-rowsview.dx-state-focused .dx-data-row > td.dx-command-edit > a.dx-link:focus {
-  outline: rgb(80,119,190) solid 2px;
+  outline: rgba(255,165,0,.47) solid 2px;
   outline-offset: 2px;
 }
 .dx-treelist-container .dx-treelist-rowsview.dx-state-focused .dx-data-row.dx-row-focused > td.dx-command-edit > a.dx-link:focus {
@@ -17280,7 +17280,7 @@ input.dx-hidden {
   outline-offset: 0;
 }
 .dx-treelist-container .dx-treelist-rowsview .dx-treelist-edit-form {
-  background-color: #000;
+  background-color: #0f101f;
 }
 .dx-treelist-container .dx-treelist-rowsview .dx-virtual-row > td {
   position: relative;
@@ -17304,7 +17304,7 @@ input.dx-hidden {
   padding: 0;
 }
 .dx-treelist-container .dx-error-row .dx-error-message {
-  background-color: #922820;
+  background-color: #982f2d;
   white-space: normal;
   word-wrap: break-word;
 }
@@ -17320,7 +17320,7 @@ input.dx-hidden {
 .dx-treelist-filter-panel.dx-state-focused .dx-icon-filter:focus,
 .dx-treelist-filter-panel.dx-state-focused .dx-treelist-filter-panel-clear-filter:focus,
 .dx-treelist-filter-panel.dx-state-focused .dx-treelist-filter-panel-text:focus {
-  outline: rgb(80,119,190) solid 2px;
+  outline: rgba(255,165,0,.47) solid 2px;
 }
 .dx-treelist-form-buttons-container {
   float: right;
@@ -17347,7 +17347,7 @@ input.dx-hidden {
   content: "\f06c";
 }
 .dx-treelist-edit-popup .dx-error-message {
-  background-color: #922820;
+  background-color: #982f2d;
   white-space: normal;
   word-wrap: break-word;
   color: #fff;
@@ -17437,7 +17437,7 @@ input.dx-hidden {
 }
 .dx-treelist-container.dx-filter-menu .dx-menu-item-content .dx-icon,
 .dx-treelist.dx-filter-menu .dx-menu-item-content .dx-icon {
-  color: rgba(255,255,255,.54);
+  color: rgba(182,237,130,.73);
   width: 18px;
   height: 18px;
   background-position: 0 0;
@@ -17669,9 +17669,9 @@ input.dx-hidden {
   line-height: inherit;
 }
 .dx-treelist .dx-row-alt > td {
-  background-color: #0e0e14;
-  border-top: 1px solid #0e0e14;
-  border-bottom: 1px solid #0e0e14;
+  background-color: #18192a;
+  border-top: 1px solid #18192a;
+  border-bottom: 1px solid #18192a;
 }
 .dx-treelist .dx-row-alt.dx-row:not(.dx-row-removed) {
   border-bottom-color: transparent;
@@ -17874,12 +17874,12 @@ input.dx-hidden {
 .dx-editor-cell .dx-texteditor.dx-state-active,
 .dx-editor-cell .dx-texteditor.dx-state-focused,
 .dx-editor-cell .dx-texteditor.dx-state-hover {
-  background: rgba(0,0,0,0);
+  background: rgba(15,16,31,0);
   -webkit-box-shadow: none;
   box-shadow: none;
 }
 .dx-editor-cell .dx-texteditor .dx-texteditor-input {
-  background: rgba(0,0,0,0);
+  background: rgba(15,16,31,0);
   font-size: 14px;
   height: 48px;
   line-height: 48px;
@@ -17914,7 +17914,7 @@ input.dx-hidden {
   left: 0;
 }
 .dx-editor-cell .dx-dropdowneditor {
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(15,16,31,0);
 }
 .dx-editor-cell.dx-focused .dx-dropdowneditor-icon {
   border-radius: 0;
@@ -17964,7 +17964,7 @@ input.dx-hidden {
 .dx-treelist-column-chooser .dx-overlay-content .dx-popup-content .dx-column-chooser-item {
   margin: 2px 2px 8px;
   background-color: #080808;
-  color: rgba(255,255,255,.6);
+  color: #f7f4f8;
   font-weight: 500;
   font-size: 14px;
   padding: 14px;
@@ -17973,13 +17973,13 @@ input.dx-hidden {
   box-shadow: 0 0 1px rgba(0,0,0,.3),0 1px 3px rgba(0,0,0,.4);
 }
 .dx-treelist-drag-header {
-  border-color: rgba(100,149,237,.5);
+  border-color: rgba(148,148,68,.64);
   -webkit-box-shadow: 0 0 1px rgba(0,0,0,.3),0 1px 3px rgba(0,0,0,.4);
   box-shadow: 0 0 1px rgba(0,0,0,.3),0 1px 3px rgba(0,0,0,.4);
-  color: rgba(255,255,255,.6);
+  color: #f7f4f8;
   font-weight: 500;
   padding: 20px;
-  background-color: #000;
+  background-color: #0f101f;
   line-height: 16px;
   font-size: 14px;
 }
@@ -18005,7 +18005,7 @@ input.dx-hidden {
   position: absolute;
   bottom: 0;
   height: 2px;
-  background-color: #5077be;
+  background-color: rgba(255,165,0,.47);
   left: 0;
   right: 1px;
 }
@@ -18023,7 +18023,7 @@ input.dx-hidden {
   background-color: transparent;
 }
 .dx-treelist-headers {
-  color: rgba(255,255,255,.6);
+  color: #f7f4f8;
   -ms-touch-action: pinch-zoom;
   touch-action: pinch-zoom;
   border-bottom: 1px solid #515159;
@@ -18068,7 +18068,7 @@ input.dx-hidden {
   border-right: none;
 }
 .dx-treelist-filter-row {
-  background-color: #000;
+  background-color: #0c0c18;
 }
 .dx-treelist-filter-row .dx-menu {
   margin-left: 0;
@@ -18096,7 +18096,7 @@ input.dx-hidden {
 }
 .dx-treelist-filter-range-overlay .dx-overlay-content {
   overflow: inherit;
-  background-color: #000;
+  background-color: #0c0c18;
   -webkit-box-shadow: 0 0 1px rgba(0,0,0,.3),0 1px 3px rgba(0,0,0,.4);
   box-shadow: 0 0 1px rgba(0,0,0,.3),0 1px 3px rgba(0,0,0,.4);
 }
@@ -18280,7 +18280,7 @@ input.dx-hidden {
 }
 .dx-treelist-rowsview .dx-master-detail-row:not(.dx-treelist-edit-form) .dx-master-detail-cell,
 .dx-treelist-rowsview .dx-master-detail-row:not(.dx-treelist-edit-form) > .dx-treelist-group-space {
-  background-color: #000;
+  background-color: #0c0c18;
 }
 .dx-treelist-rowsview .dx-adaptive-detail-row.dx-selection:hover:not(.dx-edit-row) .dx-cell-modified,
 .dx-treelist-rowsview .dx-adaptive-detail-row.dx-selection:not(.dx-edit-row) .dx-cell-modified,
@@ -18313,7 +18313,7 @@ input.dx-hidden {
   background-color: #515159;
   border-top: 1px solid #515159;
   border-bottom: 1px solid #515159;
-  color: rgba(255,255,255,.6);
+  color: #f7f4f8;
 }
 .dx-treelist-rowsview .dx-adaptive-detail-row .dx-field-item-label {
   padding-top: 0;
@@ -18344,69 +18344,69 @@ input.dx-hidden {
 }
 .dx-treelist-rowsview .dx-row-focused.dx-data-row .dx-command-edit .dx-link,
 .dx-treelist-rowsview .dx-row-focused.dx-data-row > td:not(.dx-focused):not(.dx-cell-modified) {
-  background-color: rgba(100,149,237,.37);
-  color: rgba(255,255,255,.93);
+  background-color: rgba(255,165,0,.47);
+  color: #dbdbdb;
 }
 .dx-treelist-rowsview .dx-row-focused.dx-data-row .dx-command-edit .dx-link .dx-treelist-group-closed,
 .dx-treelist-rowsview .dx-row-focused.dx-data-row .dx-command-edit .dx-link .dx-treelist-group-opened,
 .dx-treelist-rowsview .dx-row-focused.dx-data-row > td:not(.dx-focused):not(.dx-cell-modified) .dx-treelist-group-closed,
 .dx-treelist-rowsview .dx-row-focused.dx-data-row > td:not(.dx-focused):not(.dx-cell-modified) .dx-treelist-group-opened {
-  color: rgba(255,255,255,.93);
+  color: #dbdbdb;
 }
 .dx-treelist-rowsview .dx-row-focused.dx-data-row .dx-command-edit .dx-link:focus {
-  background-color: #000;
+  background-color: #0f101f;
   color: #6495ed;
 }
 .dx-treelist-rowsview .dx-row-focused.dx-data-row > td,
 .dx-treelist-rowsview .dx-row-focused.dx-data-row > tr:last-child > td {
-  border-bottom: 2px solid #5077be;
+  border-bottom: 2px solid rgba(255,165,0,.47);
 }
 .dx-treelist-rowsview .dx-row-focused.dx-data-row:not(.dx-row-lines) > td,
 .dx-treelist-rowsview .dx-row-focused.dx-data-row:not(.dx-row-lines) > tr:first-child > td {
-  border-top: 1px solid #5077be;
-  border-bottom: 1px solid #5077be;
+  border-top: 1px solid rgba(255,165,0,.47);
+  border-bottom: 1px solid rgba(255,165,0,.47);
 }
 .dx-treelist-rowsview .dx-row-focused.dx-data-row.dx-edit-row > td.dx-editor-cell:not(.dx-command-select),
 .dx-treelist-rowsview .dx-row-focused.dx-data-row.dx-edit-row > tr > td.dx-editor-cell:not(.dx-command-select) {
-  background-color: #000;
+  background-color: #0f101f;
   color: #fff;
 }
 .dx-treelist-rowsview .dx-row-focused.dx-group-row {
-  background-color: rgba(100,149,237,.37);
-  color: rgba(255,255,255,.93);
+  background-color: rgba(255,165,0,.47);
+  color: #dbdbdb;
 }
 .dx-treelist-rowsview .dx-row-focused.dx-group-row .dx-treelist-group-closed,
 .dx-treelist-rowsview .dx-row-focused.dx-group-row .dx-treelist-group-opened {
-  color: rgba(255,255,255,.93);
+  color: #dbdbdb;
 }
 .dx-treelist-rowsview .dx-selection.dx-row:not(.dx-row-focused) > td,
 .dx-treelist-rowsview .dx-selection.dx-row:not(.dx-row-focused) > tr > td,
 .dx-treelist-rowsview .dx-selection.dx-row:not(.dx-row-focused):hover > td,
 .dx-treelist-rowsview .dx-selection.dx-row:not(.dx-row-focused):hover > tr > td {
-  background-color: rgba(100,149,237,.23);
-  color: #fff;
+  background-color: rgba(47,70,90,.59);
+  color: #dbdbdb;
 }
 .dx-treelist-rowsview .dx-selection.dx-row:not(.dx-row-focused) > td.dx-treelist-group-space,
 .dx-treelist-rowsview .dx-selection.dx-row:not(.dx-row-focused) > tr > td.dx-treelist-group-space,
 .dx-treelist-rowsview .dx-selection.dx-row:not(.dx-row-focused):hover > td.dx-treelist-group-space,
 .dx-treelist-rowsview .dx-selection.dx-row:not(.dx-row-focused):hover > tr > td.dx-treelist-group-space {
-  border-right-color: rgba(100,149,237,.23);
+  border-right-color: rgba(47,70,90,.59);
 }
 .dx-treelist-rowsview .dx-selection.dx-row:not(.dx-row-focused) > td.dx-pointer-events-none,
 .dx-treelist-rowsview .dx-selection.dx-row:not(.dx-row-focused) > tr > td.dx-pointer-events-none,
 .dx-treelist-rowsview .dx-selection.dx-row:not(.dx-row-focused):hover > td.dx-pointer-events-none,
 .dx-treelist-rowsview .dx-selection.dx-row:not(.dx-row-focused):hover > tr > td.dx-pointer-events-none {
-  border-left-color: #515159;
-  border-right-color: #515159;
+  border-left-color: rgba(148,148,68,.64);
+  border-right-color: rgba(148,148,68,.64);
 }
 .dx-treelist-rowsview .dx-selection.dx-row:not(.dx-row-focused):hover:not(.dx-row-lines) > td,
 .dx-treelist-rowsview .dx-selection.dx-row:not(.dx-row-focused):not(.dx-row-lines) > td {
-  border-bottom: 1px solid rgba(100,149,237,.23);
-  border-top: 1px solid rgba(100,149,237,.23);
+  border-bottom: 1px solid rgba(47,70,90,.59);
+  border-top: 1px solid rgba(47,70,90,.59);
 }
 .dx-treelist-rowsview .dx-selection.dx-row:not(.dx-row-focused).dx-row-lines > td,
 .dx-treelist-rowsview .dx-selection.dx-row:not(.dx-row-focused):hover.dx-row-lines > td {
-  border-bottom-color: #515159;
+  border-bottom-color: rgba(148,148,68,.64);
 }
 .dx-treelist-rowsview.dx-scrollable-scrollbars-alwaysvisible.dx-scrollable-both .dx-scrollable-wrapper .dx-scrollable-container .dx-scrollable-content {
   padding-right: 0;
@@ -18443,7 +18443,7 @@ input.dx-hidden {
 }
 .dx-treelist-search-text {
   color: rgba(0,0,0,.87);
-  background-color: rgba(100,149,237,.61);
+  background-color: #18192a;
 }
 .dx-treelist-nodata {
   color: #fff;
@@ -18451,7 +18451,7 @@ input.dx-hidden {
 }
 .dx-treelist-bottom-load-panel {
   border-top: 1px solid #515159;
-  background-color: #000;
+  background-color: #0f101f;
 }
 .dx-treelist-summary-item {
   color: rgba(255,255,255,.7);
@@ -18540,19 +18540,19 @@ input.dx-hidden {
 .dx-rtl .dx-treelist-rowsview .dx-selection.dx-row > tr > td,
 .dx-rtl .dx-treelist-rowsview .dx-selection.dx-row:hover > td,
 .dx-rtl .dx-treelist-rowsview .dx-selection.dx-row:hover > tr > td {
-  border-right-color: #515159;
+  border-right-color: rgba(148,148,68,.64);
 }
 .dx-rtl .dx-treelist-rowsview .dx-selection.dx-row > td:not(.dx-focused).dx-treelist-group-space,
 .dx-rtl .dx-treelist-rowsview .dx-selection.dx-row > tr > td:not(.dx-focused).dx-treelist-group-space,
 .dx-rtl .dx-treelist-rowsview .dx-selection.dx-row:hover > td:not(.dx-focused).dx-treelist-group-space,
 .dx-rtl .dx-treelist-rowsview .dx-selection.dx-row:hover > tr > td:not(.dx-focused).dx-treelist-group-space {
-  border-left-color: rgba(100,149,237,.23);
+  border-left-color: rgba(47,70,90,.59);
 }
 .dx-rtl .dx-treelist-rowsview .dx-selection.dx-row > td.dx-pointer-events-none,
 .dx-rtl .dx-treelist-rowsview .dx-selection.dx-row > tr > td.dx-pointer-events-none,
 .dx-rtl .dx-treelist-rowsview .dx-selection.dx-row:hover > td.dx-pointer-events-none,
 .dx-rtl .dx-treelist-rowsview .dx-selection.dx-row:hover > tr > td.dx-pointer-events-none {
-  border-left-color: #515159;
+  border-left-color: rgba(148,148,68,.64);
 }
 .dx-rtl .dx-treelist-rowsview.dx-scrollable-scrollbars-alwaysvisible.dx-scrollable-both .dx-scrollable-wrapper .dx-scrollable-container .dx-scrollable-content {
   padding-left: 0;
@@ -18973,7 +18973,7 @@ input.dx-hidden {
   content: "\f052";
 }
 .dx-pivotgrid-fields-container .dx-header-filter {
-  color: rgba(255,255,255,.6);
+  color: #f7f4f8;
   font: 14px/1 DXIcons;
   width: 14px;
 }
@@ -18981,7 +18981,7 @@ input.dx-hidden {
   content: "\f050";
 }
 .dx-pivotgrid-fields-container .dx-header-filter-empty {
-  color: rgba(255,255,255,.38);
+  color: rgba(247,244,248,.38);
 }
 .dx-pivotgrid-fields-container .dx-area-field {
   cursor: pointer;
@@ -25981,7 +25981,7 @@ input.dx-hidden {
   height: 57px;
 }
 .dx-gantt .dx-gantt-header {
-  color: rgba(255,255,255,.6);
+  color: #f7f4f8;
   font-size: 12px;
 }
 .dx-gantt .dx-gantt-header .dx-gantt-hb,
@@ -26152,7 +26152,7 @@ input.dx-hidden {
   background-color: #fff;
 }
 .dx-gantt .dx-gantt-sel {
-  background-color: rgba(100,149,237,.23);
+  background-color: rgba(47,70,90,.59);
 }
 .dx-gantt .dx-gantt-conn-v {
   border-left-color: #fff;
@@ -26176,52 +26176,52 @@ input.dx-hidden {
   background-color: #0d0d0d;
 }
 .dx-gantt-i.dx-gantt-i-add {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3Csvg%20version%3D%221.1%22%20id%3D%22_x31_%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2018%2018%22%20style%3D%22enable-background%3Anew%200%200%2018%2018%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%09.st0%7Bfill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3B%7D%0A%3C%2Fstyle%3E%0A%3Cpath%20id%3D%22_x32_%22%20class%3D%22st0%22%20d%3D%22M17%2C15h-3v3h-2v-3H9v-2h3v-3h2v3h3V15z%20M12%2C4l-2-2H3v12h4v2H1V0h10l3%2C3v5h-2V4z%22%20fill%3D%22rgba%28255,%20255,%20255,%200.6%29%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3Csvg%20version%3D%221.1%22%20id%3D%22_x31_%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2018%2018%22%20style%3D%22enable-background%3Anew%200%200%2018%2018%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%09.st0%7Bfill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3B%7D%0A%3C%2Fstyle%3E%0A%3Cpath%20id%3D%22_x32_%22%20class%3D%22st0%22%20d%3D%22M17%2C15h-3v3h-2v-3H9v-2h3v-3h2v3h3V15z%20M12%2C4l-2-2H3v12h4v2H1V0h10l3%2C3v5h-2V4z%22%20fill%3D%22rgb%28247,%20244,%20248%29%22%2F%3E%0A%3C%2Fsvg%3E%0A");
 }
 .dx-gantt-i.dx-gantt-i-add-sub-task {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3Csvg%20version%3D%221.1%22%20id%3D%22_x31_%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2018%2018%22%20style%3D%22enable-background%3Anew%200%200%2018%2018%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%09.st0%7Bfill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3B%7D%0A%3C%2Fstyle%3E%0A%3Cpath%20id%3D%22_x32_%22%20class%3D%22st0%22%20d%3D%22M14%2C6H6v3h2.3c0.3-0.6%2C1-1%2C1.7-1h5c1.1%2C0%2C2%2C0.9%2C2%2C2s-0.9%2C2-2%2C2h-5c-0.7%2C0-1.4-0.4-1.7-1H6v4h2.3%0A%09c0.3-0.6%2C1-1%2C1.7-1h5c1.1%2C0%2C2%2C0.9%2C2%2C2s-0.9%2C2-2%2C2h-5c-0.7%2C0-1.4-0.4-1.7-1H4v-2v-4V9V6l0%2C0C2.3%2C6%2C1%2C4.7%2C1%2C3s1.3-3%2C3-3h10%0A%09c1.7%2C0%2C3%2C1.3%2C3%2C3S15.7%2C6%2C14%2C6z%20M14%2C2H4C3.4%2C2%2C3%2C2.4%2C3%2C3s0.4%2C1%2C1%2C1h10c0.6%2C0%2C1-0.4%2C1-1S14.6%2C2%2C14%2C2z%22%20fill%3D%22rgba%28255,%20255,%20255,%200.6%29%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3Csvg%20version%3D%221.1%22%20id%3D%22_x31_%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2018%2018%22%20style%3D%22enable-background%3Anew%200%200%2018%2018%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%09.st0%7Bfill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3B%7D%0A%3C%2Fstyle%3E%0A%3Cpath%20id%3D%22_x32_%22%20class%3D%22st0%22%20d%3D%22M14%2C6H6v3h2.3c0.3-0.6%2C1-1%2C1.7-1h5c1.1%2C0%2C2%2C0.9%2C2%2C2s-0.9%2C2-2%2C2h-5c-0.7%2C0-1.4-0.4-1.7-1H6v4h2.3%0A%09c0.3-0.6%2C1-1%2C1.7-1h5c1.1%2C0%2C2%2C0.9%2C2%2C2s-0.9%2C2-2%2C2h-5c-0.7%2C0-1.4-0.4-1.7-1H4v-2v-4V9V6l0%2C0C2.3%2C6%2C1%2C4.7%2C1%2C3s1.3-3%2C3-3h10%0A%09c1.7%2C0%2C3%2C1.3%2C3%2C3S15.7%2C6%2C14%2C6z%20M14%2C2H4C3.4%2C2%2C3%2C2.4%2C3%2C3s0.4%2C1%2C1%2C1h10c0.6%2C0%2C1-0.4%2C1-1S14.6%2C2%2C14%2C2z%22%20fill%3D%22rgb%28247,%20244,%20248%29%22%2F%3E%0A%3C%2Fsvg%3E%0A");
 }
 .dx-gantt-i.dx-gantt-i-add-task {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3Csvg%20version%3D%221.1%22%20id%3D%22_x31_%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2018%2018%22%20style%3D%22enable-background%3Anew%200%200%2018%2018%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%09.st0%7Bfill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3B%7D%0A%3C%2Fstyle%3E%0A%3Cpath%20class%3D%22st0%22%20d%3D%22M10%2C13H8v-3H5V8h3V5h2v3h3v2h-3V13z%22%20fill%3D%22rgba%28255,%20255,%20255,%200.6%29%22%2F%3E%0A%3Cpath%20class%3D%22st0%22%20d%3D%22M9%2C1.1c-4.4%2C0-8%2C3.6-8%2C8c0%2C4.4%2C3.6%2C8%2C8%2C8s8-3.6%2C8-8C17%2C4.6%2C13.4%2C1.1%2C9%2C1.1z%20M9%2C15c-3.3%2C0-6-2.7-6-6s2.7-6%2C6-6%0A%09s6%2C2.7%2C6%2C6S12.3%2C15%2C9%2C15z%22%20fill%3D%22rgba%28255,%20255,%20255,%200.6%29%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3Csvg%20version%3D%221.1%22%20id%3D%22_x31_%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2018%2018%22%20style%3D%22enable-background%3Anew%200%200%2018%2018%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%09.st0%7Bfill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3B%7D%0A%3C%2Fstyle%3E%0A%3Cpath%20class%3D%22st0%22%20d%3D%22M10%2C13H8v-3H5V8h3V5h2v3h3v2h-3V13z%22%20fill%3D%22rgb%28247,%20244,%20248%29%22%2F%3E%0A%3Cpath%20class%3D%22st0%22%20d%3D%22M9%2C1.1c-4.4%2C0-8%2C3.6-8%2C8c0%2C4.4%2C3.6%2C8%2C8%2C8s8-3.6%2C8-8C17%2C4.6%2C13.4%2C1.1%2C9%2C1.1z%20M9%2C15c-3.3%2C0-6-2.7-6-6s2.7-6%2C6-6%0A%09s6%2C2.7%2C6%2C6S12.3%2C15%2C9%2C15z%22%20fill%3D%22rgb%28247,%20244,%20248%29%22%2F%3E%0A%3C%2Fsvg%3E%0A");
 }
 .dx-gantt-i.dx-gantt-i-collapse {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3Csvg%20version%3D%221.1%22%20id%3D%22_x31_%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2018%2018%22%20style%3D%22enable-background%3Anew%200%200%2018%2018%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%09.st0%7Bfill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3B%7D%0A%3C%2Fstyle%3E%0A%3Cpath%20id%3D%22_x32_%22%20class%3D%22st0%22%20d%3D%22M9%2C7l7%2C6.8L14.8%2C15L9%2C9.3L3.2%2C15L2%2C13.8L9%2C7z%20M3.2%2C10L2%2C8.8L9%2C2l7%2C6.8L14.8%2C10L9%2C4.3L3.2%2C10z%22%20fill%3D%22rgba%28255,%20255,%20255,%200.6%29%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3Csvg%20version%3D%221.1%22%20id%3D%22_x31_%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2018%2018%22%20style%3D%22enable-background%3Anew%200%200%2018%2018%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%09.st0%7Bfill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3B%7D%0A%3C%2Fstyle%3E%0A%3Cpath%20id%3D%22_x32_%22%20class%3D%22st0%22%20d%3D%22M9%2C7l7%2C6.8L14.8%2C15L9%2C9.3L3.2%2C15L2%2C13.8L9%2C7z%20M3.2%2C10L2%2C8.8L9%2C2l7%2C6.8L14.8%2C10L9%2C4.3L3.2%2C10z%22%20fill%3D%22rgb%28247,%20244,%20248%29%22%2F%3E%0A%3C%2Fsvg%3E%0A");
 }
 .dx-gantt-i.dx-gantt-i-delete {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3Csvg%20version%3D%221.1%22%20id%3D%22_x31_%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2018%2018%22%20style%3D%22enable-background%3Anew%200%200%2018%2018%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%09.st0%7Bfill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3B%7D%0A%3C%2Fstyle%3E%0A%3Cpath%20id%3D%22_x32_%22%20class%3D%22st0%22%20d%3D%22M17%2C10H9c-0.6%2C0-1-0.4-1-1s0.4-1%2C1-1h2c0-0.6%2C0.4-1%2C1-1h2c0.6%2C0%2C1%2C0.4%2C1%2C1h2c0.6%2C0%2C1%2C0.4%2C1%2C1%0A%09S17.6%2C10%2C17%2C10z%20M12%2C4l-2-2H3v12h4v2H1V0h10l3%2C3v3h-2V4z%20M17%2C16c0%2C1.1-0.9%2C2-2%2C2h-4c-1.1%2C0-2-0.9-2-2v-5h8V16z%22%20fill%3D%22rgba%28255,%20255,%20255,%200.6%29%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3Csvg%20version%3D%221.1%22%20id%3D%22_x31_%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2018%2018%22%20style%3D%22enable-background%3Anew%200%200%2018%2018%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%09.st0%7Bfill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3B%7D%0A%3C%2Fstyle%3E%0A%3Cpath%20id%3D%22_x32_%22%20class%3D%22st0%22%20d%3D%22M17%2C10H9c-0.6%2C0-1-0.4-1-1s0.4-1%2C1-1h2c0-0.6%2C0.4-1%2C1-1h2c0.6%2C0%2C1%2C0.4%2C1%2C1h2c0.6%2C0%2C1%2C0.4%2C1%2C1%0A%09S17.6%2C10%2C17%2C10z%20M12%2C4l-2-2H3v12h4v2H1V0h10l3%2C3v3h-2V4z%20M17%2C16c0%2C1.1-0.9%2C2-2%2C2h-4c-1.1%2C0-2-0.9-2-2v-5h8V16z%22%20fill%3D%22rgb%28247,%20244,%20248%29%22%2F%3E%0A%3C%2Fsvg%3E%0A");
 }
 .dx-gantt-i.dx-gantt-i-delete-dependency {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3Csvg%20version%3D%221.1%22%20id%3D%22_x31_%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2018%2018%22%20style%3D%22enable-background%3Anew%200%200%2018%2018%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%09.st0%7Bfill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3B%7D%0A%3C%2Fstyle%3E%0A%3Cpath%20id%3D%22_x32_%22%20class%3D%22st0%22%20d%3D%22M17%2C10H9c-0.6%2C0-1-0.4-1-1c0-0.6%2C0.4-1%2C1-1h2c0-0.6%2C0.4-1%2C1-1h2c0.6%2C0%2C1%2C0.4%2C1%2C1h2c0.6%2C0%2C1%2C0.4%2C1%2C1%0A%09C18%2C9.6%2C17.6%2C10%2C17%2C10z%20M8%2C13H5V5H3.7C3.4%2C5.6%2C2.7%2C6%2C2%2C6C0.9%2C6%2C0%2C5.1%2C0%2C4s0.9-2%2C2-2c0.7%2C0%2C1.4%2C0.4%2C1.7%2C1H7v8h1V13z%20M17%2C16%0A%09c0%2C1.1-0.9%2C2-2%2C2h-4c-1.1%2C0-2-0.9-2-2v-5h8V16z%22%20fill%3D%22rgba%28255,%20255,%20255,%200.6%29%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3Csvg%20version%3D%221.1%22%20id%3D%22_x31_%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2018%2018%22%20style%3D%22enable-background%3Anew%200%200%2018%2018%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%09.st0%7Bfill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3B%7D%0A%3C%2Fstyle%3E%0A%3Cpath%20id%3D%22_x32_%22%20class%3D%22st0%22%20d%3D%22M17%2C10H9c-0.6%2C0-1-0.4-1-1c0-0.6%2C0.4-1%2C1-1h2c0-0.6%2C0.4-1%2C1-1h2c0.6%2C0%2C1%2C0.4%2C1%2C1h2c0.6%2C0%2C1%2C0.4%2C1%2C1%0A%09C18%2C9.6%2C17.6%2C10%2C17%2C10z%20M8%2C13H5V5H3.7C3.4%2C5.6%2C2.7%2C6%2C2%2C6C0.9%2C6%2C0%2C5.1%2C0%2C4s0.9-2%2C2-2c0.7%2C0%2C1.4%2C0.4%2C1.7%2C1H7v8h1V13z%20M17%2C16%0A%09c0%2C1.1-0.9%2C2-2%2C2h-4c-1.1%2C0-2-0.9-2-2v-5h8V16z%22%20fill%3D%22rgb%28247,%20244,%20248%29%22%2F%3E%0A%3C%2Fsvg%3E%0A");
 }
 .dx-gantt-i.dx-gantt-i-expand {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3Csvg%20version%3D%221.1%22%20id%3D%22_x31_%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2018%2018%22%20style%3D%22enable-background%3Anew%200%200%2018%2018%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%09.st0%7Bfill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3B%7D%0A%3C%2Fstyle%3E%0A%3Cpath%20id%3D%22_x32_%22%20class%3D%22st0%22%20d%3D%22M2%2C3.2L3.2%2C2L9%2C7.7L14.8%2C2L16%2C3.2L9%2C10L2%2C3.2z%20M9%2C12.7L14.8%2C7L16%2C8.2L9%2C15L2%2C8.2L3.2%2C7L9%2C12.7z%22%20fill%3D%22rgba%28255,%20255,%20255,%200.6%29%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3Csvg%20version%3D%221.1%22%20id%3D%22_x31_%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2018%2018%22%20style%3D%22enable-background%3Anew%200%200%2018%2018%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%09.st0%7Bfill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3B%7D%0A%3C%2Fstyle%3E%0A%3Cpath%20id%3D%22_x32_%22%20class%3D%22st0%22%20d%3D%22M2%2C3.2L3.2%2C2L9%2C7.7L14.8%2C2L16%2C3.2L9%2C10L2%2C3.2z%20M9%2C12.7L14.8%2C7L16%2C8.2L9%2C15L2%2C8.2L3.2%2C7L9%2C12.7z%22%20fill%3D%22rgb%28247,%20244,%20248%29%22%2F%3E%0A%3C%2Fsvg%3E%0A");
 }
 .dx-gantt-i.dx-gantt-i-full-screen {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2018%2018%22%20style%3D%22enable-background%3Anew%200%200%2018%2018%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%09.st0%7B%7D%0A%3C%2Fstyle%3E%0A%3Cpolygon%20id%3D%22_x34_%22%20class%3D%22st0%22%20points%3D%221%2C7%203%2C7%203%2C3%207%2C3%207%2C1%201%2C1%20%22%20fill%3D%22rgba%28255,%20255,%20255,%200.6%29%22%2F%3E%0A%3Cpolygon%20id%3D%22_x33_%22%20class%3D%22st0%22%20points%3D%223%2C11%201%2C11%201%2C17%207%2C17%207%2C15%203%2C15%20%22%20fill%3D%22rgba%28255,%20255,%20255,%200.6%29%22%2F%3E%0A%3Cpolygon%20id%3D%22_x32_%22%20class%3D%22st0%22%20points%3D%2211%2C1%2011%2C3%2015%2C3%2015%2C7%2017%2C7%2017%2C1%20%22%20fill%3D%22rgba%28255,%20255,%20255,%200.6%29%22%2F%3E%0A%3Cpolygon%20id%3D%22_x31_%22%20class%3D%22st0%22%20points%3D%2215%2C15%2011%2C15%2011%2C17%2017%2C17%2017%2C11%2015%2C11%20%22%20fill%3D%22rgba%28255,%20255,%20255,%200.6%29%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2018%2018%22%20style%3D%22enable-background%3Anew%200%200%2018%2018%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%09.st0%7B%7D%0A%3C%2Fstyle%3E%0A%3Cpolygon%20id%3D%22_x34_%22%20class%3D%22st0%22%20points%3D%221%2C7%203%2C7%203%2C3%207%2C3%207%2C1%201%2C1%20%22%20fill%3D%22rgb%28247,%20244,%20248%29%22%2F%3E%0A%3Cpolygon%20id%3D%22_x33_%22%20class%3D%22st0%22%20points%3D%223%2C11%201%2C11%201%2C17%207%2C17%207%2C15%203%2C15%20%22%20fill%3D%22rgb%28247,%20244,%20248%29%22%2F%3E%0A%3Cpolygon%20id%3D%22_x32_%22%20class%3D%22st0%22%20points%3D%2211%2C1%2011%2C3%2015%2C3%2015%2C7%2017%2C7%2017%2C1%20%22%20fill%3D%22rgb%28247,%20244,%20248%29%22%2F%3E%0A%3Cpolygon%20id%3D%22_x31_%22%20class%3D%22st0%22%20points%3D%2215%2C15%2011%2C15%2011%2C17%2017%2C17%2017%2C11%2015%2C11%20%22%20fill%3D%22rgb%28247,%20244,%20248%29%22%2F%3E%0A%3C%2Fsvg%3E%0A");
 }
 .dx-gantt-i.dx-gantt-i-redo {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3Csvg%20version%3D%221.1%22%20id%3D%22_x31_%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2018%2018%22%20style%3D%22enable-background%3Anew%200%200%2018%2018%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%09.st0%7Bfill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3B%7D%0A%3C%2Fstyle%3E%0A%3Cpath%20id%3D%22_x32_%22%20class%3D%22st0%22%20d%3D%22M1%2C9c0-4.4%2C3.6-8%2C8-8c2.2%2C0%2C4.2%2C0.9%2C5.6%2C2.4L17%2C1v6h-6l2.2-2.2C12.1%2C3.7%2C10.7%2C3%2C9%2C3C5.7%2C3%2C3%2C5.7%2C3%2C9%0A%09s2.7%2C6%2C6%2C6v2C4.6%2C17%2C1%2C13.4%2C1%2C9z%22%20fill%3D%22rgba%28255,%20255,%20255,%200.6%29%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3Csvg%20version%3D%221.1%22%20id%3D%22_x31_%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2018%2018%22%20style%3D%22enable-background%3Anew%200%200%2018%2018%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%09.st0%7Bfill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3B%7D%0A%3C%2Fstyle%3E%0A%3Cpath%20id%3D%22_x32_%22%20class%3D%22st0%22%20d%3D%22M1%2C9c0-4.4%2C3.6-8%2C8-8c2.2%2C0%2C4.2%2C0.9%2C5.6%2C2.4L17%2C1v6h-6l2.2-2.2C12.1%2C3.7%2C10.7%2C3%2C9%2C3C5.7%2C3%2C3%2C5.7%2C3%2C9%0A%09s2.7%2C6%2C6%2C6v2C4.6%2C17%2C1%2C13.4%2C1%2C9z%22%20fill%3D%22rgb%28247,%20244,%20248%29%22%2F%3E%0A%3C%2Fsvg%3E%0A");
 }
 .dx-gantt-i.dx-gantt-i-task-details {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3Csvg%20version%3D%221.1%22%20id%3D%22_x31_%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2018%2018%22%20style%3D%22enable-background%3Anew%200%200%2018%2018%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%09.st0%7Bfill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3B%7D%0A%3C%2Fstyle%3E%0A%3Cpath%20id%3D%22_x32_%22%20class%3D%22st0%22%20d%3D%22M12.5%2C18C10%2C18%2C7.9%2C15.5%2C7%2C13.5c0.9-2%2C3-4.5%2C5.5-4.5s4.6%2C2.5%2C5.5%2C4.5C17.1%2C15.5%2C15%2C18%2C12.5%2C18z%0A%09%20M12.5%2C11c-1.4%2C0-2.5%2C1.1-2.5%2C2.5s1.1%2C2.5%2C2.5%2C2.5s2.5-1.1%2C2.5-2.5S13.9%2C11%2C12.5%2C11z%20M12.5%2C15c-0.8%2C0-1.5-0.7-1.5-1.5%0A%09s0.7-1.5%2C1.5-1.5s1.5%2C0.7%2C1.5%2C1.5S13.3%2C15%2C12.5%2C15z%20M12%2C4l-2-2H3v12h2l1%2C2H1V0h10l3%2C3v4h-2V4z%22%20fill%3D%22rgba%28255,%20255,%20255,%200.6%29%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3Csvg%20version%3D%221.1%22%20id%3D%22_x31_%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2018%2018%22%20style%3D%22enable-background%3Anew%200%200%2018%2018%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%09.st0%7Bfill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3B%7D%0A%3C%2Fstyle%3E%0A%3Cpath%20id%3D%22_x32_%22%20class%3D%22st0%22%20d%3D%22M12.5%2C18C10%2C18%2C7.9%2C15.5%2C7%2C13.5c0.9-2%2C3-4.5%2C5.5-4.5s4.6%2C2.5%2C5.5%2C4.5C17.1%2C15.5%2C15%2C18%2C12.5%2C18z%0A%09%20M12.5%2C11c-1.4%2C0-2.5%2C1.1-2.5%2C2.5s1.1%2C2.5%2C2.5%2C2.5s2.5-1.1%2C2.5-2.5S13.9%2C11%2C12.5%2C11z%20M12.5%2C15c-0.8%2C0-1.5-0.7-1.5-1.5%0A%09s0.7-1.5%2C1.5-1.5s1.5%2C0.7%2C1.5%2C1.5S13.3%2C15%2C12.5%2C15z%20M12%2C4l-2-2H3v12h2l1%2C2H1V0h10l3%2C3v4h-2V4z%22%20fill%3D%22rgb%28247,%20244,%20248%29%22%2F%3E%0A%3C%2Fsvg%3E%0A");
 }
 .dx-gantt-i.dx-gantt-i-undo {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3Csvg%20version%3D%221.1%22%20id%3D%22_x31_%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2018%2018%22%20style%3D%22enable-background%3Anew%200%200%2018%2018%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%09.st0%7Bfill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3B%7D%0A%3C%2Fstyle%3E%0A%3Cpath%20id%3D%22_x32_%22%20class%3D%22st0%22%20d%3D%22M9%2C17v-2c3.3%2C0%2C6-2.7%2C6-6s-2.7-6-6-6C7.3%2C3%2C5.9%2C3.7%2C4.8%2C4.8L7%2C7H1V1l2.4%2C2.4C4.8%2C1.9%2C6.8%2C1%2C9%2C1%0A%09c4.4%2C0%2C8%2C3.6%2C8%2C8S13.4%2C17%2C9%2C17z%22%20fill%3D%22rgba%28255,%20255,%20255,%200.6%29%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3Csvg%20version%3D%221.1%22%20id%3D%22_x31_%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2018%2018%22%20style%3D%22enable-background%3Anew%200%200%2018%2018%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%09.st0%7Bfill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3B%7D%0A%3C%2Fstyle%3E%0A%3Cpath%20id%3D%22_x32_%22%20class%3D%22st0%22%20d%3D%22M9%2C17v-2c3.3%2C0%2C6-2.7%2C6-6s-2.7-6-6-6C7.3%2C3%2C5.9%2C3.7%2C4.8%2C4.8L7%2C7H1V1l2.4%2C2.4C4.8%2C1.9%2C6.8%2C1%2C9%2C1%0A%09c4.4%2C0%2C8%2C3.6%2C8%2C8S13.4%2C17%2C9%2C17z%22%20fill%3D%22rgb%28247,%20244,%20248%29%22%2F%3E%0A%3C%2Fsvg%3E%0A");
 }
 .dx-gantt-i.dx-gantt-i-zoom-in {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3Csvg%20version%3D%221.1%22%20id%3D%22_x31_%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2018%2018%22%20style%3D%22enable-background%3Anew%200%200%2018%2018%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%09.st0%7Bfill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3B%7D%0A%3C%2Fstyle%3E%0A%3Cpath%20id%3D%22_x32_%22%20class%3D%22st0%22%20d%3D%22M17.7%2C16.3l-1.4%2C1.4l-4.1-4.1C11%2C14.5%2C9.6%2C15%2C8%2C15c-3.9%2C0-7-3.1-7-7s3.1-7%2C7-7s7%2C3.1%2C7%2C7%0A%09c0%2C1.6-0.5%2C3-1.4%2C4.2L17.7%2C16.3z%20M8%2C3C5.2%2C3%2C3%2C5.2%2C3%2C8s2.2%2C5%2C5%2C5s5-2.2%2C5-5S10.8%2C3%2C8%2C3z%20M9%2C11H7V9H5V7h2V5h2v2h2v2H9V11z%22%20fill%3D%22rgba%28255,%20255,%20255,%200.6%29%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3Csvg%20version%3D%221.1%22%20id%3D%22_x31_%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2018%2018%22%20style%3D%22enable-background%3Anew%200%200%2018%2018%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%09.st0%7Bfill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3B%7D%0A%3C%2Fstyle%3E%0A%3Cpath%20id%3D%22_x32_%22%20class%3D%22st0%22%20d%3D%22M17.7%2C16.3l-1.4%2C1.4l-4.1-4.1C11%2C14.5%2C9.6%2C15%2C8%2C15c-3.9%2C0-7-3.1-7-7s3.1-7%2C7-7s7%2C3.1%2C7%2C7%0A%09c0%2C1.6-0.5%2C3-1.4%2C4.2L17.7%2C16.3z%20M8%2C3C5.2%2C3%2C3%2C5.2%2C3%2C8s2.2%2C5%2C5%2C5s5-2.2%2C5-5S10.8%2C3%2C8%2C3z%20M9%2C11H7V9H5V7h2V5h2v2h2v2H9V11z%22%20fill%3D%22rgb%28247,%20244,%20248%29%22%2F%3E%0A%3C%2Fsvg%3E%0A");
 }
 .dx-gantt-i.dx-gantt-i-zoom-out {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3Csvg%20version%3D%221.1%22%20id%3D%22_x31_%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2018%2018%22%20style%3D%22enable-background%3Anew%200%200%2018%2018%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%09.st0%7Bfill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3B%7D%0A%3C%2Fstyle%3E%0A%3Cpath%20id%3D%22_x32_%22%20class%3D%22st0%22%20d%3D%22M17.7%2C16.3l-1.4%2C1.4l-4.1-4.1C11%2C14.5%2C9.6%2C15%2C8%2C15c-3.9%2C0-7-3.1-7-7s3.1-7%2C7-7s7%2C3.1%2C7%2C7%0A%09c0%2C1.6-0.5%2C3-1.4%2C4.2L17.7%2C16.3z%20M8%2C3C5.2%2C3%2C3%2C5.2%2C3%2C8s2.2%2C5%2C5%2C5s5-2.2%2C5-5S10.8%2C3%2C8%2C3z%20M5%2C9V7h6v2H5z%22%20fill%3D%22rgba%28255,%20255,%20255,%200.6%29%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3Csvg%20version%3D%221.1%22%20id%3D%22_x31_%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2018%2018%22%20style%3D%22enable-background%3Anew%200%200%2018%2018%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%09.st0%7Bfill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3B%7D%0A%3C%2Fstyle%3E%0A%3Cpath%20id%3D%22_x32_%22%20class%3D%22st0%22%20d%3D%22M17.7%2C16.3l-1.4%2C1.4l-4.1-4.1C11%2C14.5%2C9.6%2C15%2C8%2C15c-3.9%2C0-7-3.1-7-7s3.1-7%2C7-7s7%2C3.1%2C7%2C7%0A%09c0%2C1.6-0.5%2C3-1.4%2C4.2L17.7%2C16.3z%20M8%2C3C5.2%2C3%2C3%2C5.2%2C3%2C8s2.2%2C5%2C5%2C5s5-2.2%2C5-5S10.8%2C3%2C8%2C3z%20M5%2C9V7h6v2H5z%22%20fill%3D%22rgb%28247,%20244,%20248%29%22%2F%3E%0A%3C%2Fsvg%3E%0A");
 }
 .dx-gantt-i.dx-gantt-i-resource-manager {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3Csvg%20version%3D%221.1%22%20id%3D%22_x31_%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2016%2016%22%20style%3D%22enable-background%3Anew%200%200%2016%2016%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%09.st0%7Bfill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3B%7D%0A%3C%2Fstyle%3E%0A%3Cpath%20id%3D%22_x32_%22%20class%3D%22st0%22%20d%3D%22M12%2C9h4v4h-4%20M8%2C5H0v2h8%20M12%2C5h4V1h-4%20M0%2C1v2h10V1%20M0%2C15h8v-2H0%20M0%2C11h10V9H0%22%20fill%3D%22rgba%28255,%20255,%20255,%200.6%29%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3Csvg%20version%3D%221.1%22%20id%3D%22_x31_%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2016%2016%22%20style%3D%22enable-background%3Anew%200%200%2016%2016%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%09.st0%7Bfill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3B%7D%0A%3C%2Fstyle%3E%0A%3Cpath%20id%3D%22_x32_%22%20class%3D%22st0%22%20d%3D%22M12%2C9h4v4h-4%20M8%2C5H0v2h8%20M12%2C5h4V1h-4%20M0%2C1v2h10V1%20M0%2C15h8v-2H0%20M0%2C11h10V9H0%22%20fill%3D%22rgb%28247,%20244,%20248%29%22%2F%3E%0A%3C%2Fsvg%3E%0A");
 }
 .dx-gantt-i.dx-gantt-i-toggle-resources {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3C!--%20Generator%3A%20Adobe%20Illustrator%2024.2.1%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200)%20%20--%3E%0A%3Csvg%20version%3D%221.1%22%20id%3D%22_x31_%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2018%2018%22%20style%3D%22enable-background%3Anew%200%200%2018%2018%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%09.st0%7Bfill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3B%7D%0A%3C%2Fstyle%3E%0A%3Cpath%20id%3D%22_x35_%22%20class%3D%22st0%22%20d%3D%22M14%2C15H2c-1.1%2C0-2-0.9-2-2v-2c0-1.1%2C0.9-2%2C2-2h12c1.1%2C0%2C2%2C0.9%2C2%2C2v2C16%2C14.1%2C15.1%2C15%2C14%2C15z%20M9%2C11H2%0A%09v2h7V11z%20M14%2C7H2C0.9%2C7%2C0%2C6.1%2C0%2C5V3c0-1.1%2C0.9-2%2C2-2h12c1.1%2C0%2C2%2C0.9%2C2%2C2v2C16%2C6.1%2C15.1%2C7%2C14%2C7z%20M12%2C3H2v2h10V3z%22%20fill%3D%22rgba%28255,%20255,%20255,%200.6%29%22%2F%3E%0A%3C%2Fsvg%3E%0A%0A%0A%0A");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3C!--%20Generator%3A%20Adobe%20Illustrator%2024.2.1%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200)%20%20--%3E%0A%3Csvg%20version%3D%221.1%22%20id%3D%22_x31_%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2018%2018%22%20style%3D%22enable-background%3Anew%200%200%2018%2018%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%09.st0%7Bfill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3B%7D%0A%3C%2Fstyle%3E%0A%3Cpath%20id%3D%22_x35_%22%20class%3D%22st0%22%20d%3D%22M14%2C15H2c-1.1%2C0-2-0.9-2-2v-2c0-1.1%2C0.9-2%2C2-2h12c1.1%2C0%2C2%2C0.9%2C2%2C2v2C16%2C14.1%2C15.1%2C15%2C14%2C15z%20M9%2C11H2%0A%09v2h7V11z%20M14%2C7H2C0.9%2C7%2C0%2C6.1%2C0%2C5V3c0-1.1%2C0.9-2%2C2-2h12c1.1%2C0%2C2%2C0.9%2C2%2C2v2C16%2C6.1%2C15.1%2C7%2C14%2C7z%20M12%2C3H2v2h10V3z%22%20fill%3D%22rgb%28247,%20244,%20248%29%22%2F%3E%0A%3C%2Fsvg%3E%0A%0A%0A%0A");
 }
 .dx-gantt-i.dx-gantt-i-toggle-dependencies {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3C!--%20Generator%3A%20Adobe%20Illustrator%2024.2.1%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200)%20%20--%3E%0A%3Csvg%20version%3D%221.1%22%20id%3D%22_x31_%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2018%2018%22%20style%3D%22enable-background%3Anew%200%200%2018%2018%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%09.st0%7Bfill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3B%7D%0A%09.st1%7Bopacity%3A0.5%3B%7D%0A%09.st2%7B%7D%0A%3C%2Fstyle%3E%0A%3Cpath%20id%3D%22_x32_%22%20class%3D%22st0%22%20d%3D%22M7%2C11c-2.3%2C0-4.2-1.7-5-4c0.8-2.3%2C2.7-4%2C5-4s4.2%2C1.7%2C5%2C4C11.2%2C9.3%2C9.3%2C11%2C7%2C11z%20M7%2C5%0A%09C5.9%2C5%2C5%2C5.9%2C5%2C7s0.9%2C2%2C2%2C2s2-0.9%2C2-2S8.1%2C5%2C7%2C5z%20M7%2C8C6.4%2C8%2C6%2C7.6%2C6%2C7s0.4-1%2C1-1s1%2C0.4%2C1%2C1S7.6%2C8%2C7%2C8z%22%20fill%3D%22rgba%28255,%20255,%20255,%200.6%29%22%2F%3E%0A%3Cpolygon%20class%3D%22st1%22%20points%3D%226%2C10%206%2C14%2013%2C14%2013%2C16%2016%2C13%2013%2C10%2013%2C12%208%2C12%208%2C10%20%22%20fill%3D%22rgba%28255,%20255,%20255,%200.6%29%22%2F%3E%0A%3Cpolygon%20class%3D%22st1%22%20points%3D%226%2C4%206%2C2%200%2C2%200%2C0%208%2C0%208%2C4%20%22%20fill%3D%22rgba%28255,%20255,%20255,%200.6%29%22%2F%3E%0A%3Crect%20x%3D%229.4%22%20y%3D%222.1%22%20transform%3D%22matrix(0.7071%20-0.7071%200.7071%200.7071%200.8934%209.1569)%22%20class%3D%22st2%22%20width%3D%224.2%22%20height%3D%222.8%22%20fill%3D%22rgba%28255,%20255,%20255,%200.6%29%22%2F%3E%0A%3Crect%20x%3D%221.2%22%20y%3D%229.6%22%20transform%3D%22matrix(0.7071%20-0.7071%200.7071%200.7071%20-6.6066%206.0503)%22%20class%3D%22st2%22%20width%3D%225.7%22%20height%3D%222.8%22%20fill%3D%22rgba%28255,%20255,%20255,%200.6%29%22%2F%3E%0A%3C%2Fsvg%3E%0A%0A");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3C!--%20Generator%3A%20Adobe%20Illustrator%2024.2.1%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200)%20%20--%3E%0A%3Csvg%20version%3D%221.1%22%20id%3D%22_x31_%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2018%2018%22%20style%3D%22enable-background%3Anew%200%200%2018%2018%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%09.st0%7Bfill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3B%7D%0A%09.st1%7Bopacity%3A0.5%3B%7D%0A%09.st2%7B%7D%0A%3C%2Fstyle%3E%0A%3Cpath%20id%3D%22_x32_%22%20class%3D%22st0%22%20d%3D%22M7%2C11c-2.3%2C0-4.2-1.7-5-4c0.8-2.3%2C2.7-4%2C5-4s4.2%2C1.7%2C5%2C4C11.2%2C9.3%2C9.3%2C11%2C7%2C11z%20M7%2C5%0A%09C5.9%2C5%2C5%2C5.9%2C5%2C7s0.9%2C2%2C2%2C2s2-0.9%2C2-2S8.1%2C5%2C7%2C5z%20M7%2C8C6.4%2C8%2C6%2C7.6%2C6%2C7s0.4-1%2C1-1s1%2C0.4%2C1%2C1S7.6%2C8%2C7%2C8z%22%20fill%3D%22rgb%28247,%20244,%20248%29%22%2F%3E%0A%3Cpolygon%20class%3D%22st1%22%20points%3D%226%2C10%206%2C14%2013%2C14%2013%2C16%2016%2C13%2013%2C10%2013%2C12%208%2C12%208%2C10%20%22%20fill%3D%22rgb%28247,%20244,%20248%29%22%2F%3E%0A%3Cpolygon%20class%3D%22st1%22%20points%3D%226%2C4%206%2C2%200%2C2%200%2C0%208%2C0%208%2C4%20%22%20fill%3D%22rgb%28247,%20244,%20248%29%22%2F%3E%0A%3Crect%20x%3D%229.4%22%20y%3D%222.1%22%20transform%3D%22matrix(0.7071%20-0.7071%200.7071%200.7071%200.8934%209.1569)%22%20class%3D%22st2%22%20width%3D%224.2%22%20height%3D%222.8%22%20fill%3D%22rgb%28247,%20244,%20248%29%22%2F%3E%0A%3Crect%20x%3D%221.2%22%20y%3D%229.6%22%20transform%3D%22matrix(0.7071%20-0.7071%200.7071%200.7071%20-6.6066%206.0503)%22%20class%3D%22st2%22%20width%3D%225.7%22%20height%3D%222.8%22%20fill%3D%22rgb%28247,%20244,%20248%29%22%2F%3E%0A%3C%2Fsvg%3E%0A%0A");
 }
 .dx-sortable {
   overflow: hidden;

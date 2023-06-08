@@ -1,0 +1,16 @@
+.dx-datagrid.dx-gridbase-container {
+  background-color: transparent;
+  .dx-datagrid-header-panel {
+    background-color: transparent;
+    .dx-toolbar.dx-widget {
+      background-color: transparent;
+    }
+  }
+  .dx-datagrid-rowsview {
+    border-radius: 0px 0px 8px 8px;
+  }
+}
+
+.dx-datagrid-borders > .dx-datagrid-filter-panel, .dx-datagrid-borders > .dx-datagrid-headers {
+    border-radius: 8px 8px 0px 0px;
+}
