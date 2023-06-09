@@ -35,4 +35,34 @@ export const navigation = [
     path: '/machines',
     icon: 'globe',
   },
+  {
+    text: 'Tasks',
+    path: '/tasks1',
+    icon: 'globe',
+  },
+  {
+    text: 'Machines',
+    path: '/machines1',
+    icon: 'globe',
+  },
+  {
+    text: 'Tasks',
+    path: '/tasks2',
+    icon: 'globe',
+  },
+  {
+    text: 'Machines',
+    path: '/machines2',
+    icon: 'globe',
+  },
+  {
+    text: 'Tasks',
+    path: '/tasks3',
+    icon: 'globe',
+  },
+  {
+    text: 'Machines',
+    path: '/machines3',
+    icon: 'globe',
+  }
 ]

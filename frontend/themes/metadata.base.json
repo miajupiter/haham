@@ -2,11 +2,11 @@
   "items": [
       {
           "key": "$base-bg",
-          "value": "rgba(0, 0, 0, 1)"
+          "value": "rgba(22, 22, 37, 1)"
       },
       {
           "key": "$base-accent",
-          "value": "rgba(100, 149, 237, 1)"
+          "value": "cornflowerblue"
       },
       {
           "key": "$base-success",
@@ -46,7 +46,7 @@
       },
       {
           "key": "$base-border-radius",
-          "value": "5px"
+          "value": "8px"
       },
       {
           "key": "$overlay-content-bg",
@@ -111,6 +111,10 @@
       {
           "key": "$datagrid-group-row-color",
           "value": "rgba(219, 219, 219, 1)"
+      },
+      {
+        "key":"$base-icon-color",
+        "value":"rgba(182, 237, 130, .73)"
       }
   ],
   "baseTheme": "material.blue.dark",

@@ -8,11 +8,15 @@
 
   .footer {
     display: block;
-    color: rgba($base-text-color, alpha($base-text-color) * 0.7);
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    padding-top: 20px;
-    padding-bottom: 24px;
+    color: navajowhite;
+    border-top: 1px solid rgb(175 128 128 / 25%);
+    padding-top: 12px;
+    padding-bottom: 8px;
+    opacity: 0.43;
+    font-size: 10pt;
   }
+
+  
 }
 
 .layout-header {

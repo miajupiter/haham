@@ -1,12 +1,22 @@
-import React from 'react'
+import React,{useCallback} from 'react'
 import Toolbar, { Item } from 'devextreme-react/toolbar'
 import Button from 'devextreme-react/button'
 import UserPanel from '../user-panel/UserPanel'
 import './Header.scss'
 import { Template } from 'devextreme-react/core/template'
+import { ReactComponent as MiaLogo } from '../../assets/images/logo.svg'
+import { useNavigate } from 'react-router-dom'
 
+export default function Header({
+  menuToggleEnabled,
+  title,
+  toggleMenu,
+  search,
+}) {
+  const navigate = useNavigate()
 
-export default function Header({ menuToggleEnabled, title, toggleMenu, search }) {
+	const navigateToHome = useCallback(() => navigate('/home'), [navigate])
+
   return (
     <header className={'header-component'}>
       <Toolbar className={'header-toolbar'}>
@@ -16,16 +26,18 @@ export default function Header({ menuToggleEnabled, title, toggleMenu, search })
           widget={'dxButton'}
           cssClass={'menu-button'}
         >
-          <Button icon="menu" stylingMode="text" onClick={toggleMenu} />
+          <Button icon='menu' stylingMode='text' onClick={toggleMenu} />
         </Item>
+
         <Item
           location={'before'}
           cssClass={'header-title'}
-          text={title}
-          visible={!!title}
-        />
-        <Item
-          location={'after'}>
+        >
+          <Button onClick={navigateToHome} stylingMode='text' style={{color:'goldenrod', backgroundColor:'transparent'}} >
+            <MiaLogo height={45} width={200} />
+          </Button>
+        </Item>
+        <Item location={'after'}>
           <Button icon={'search'} onClick={search} />
         </Item>
         <Item
@@ -45,7 +57,6 @@ export default function Header({ menuToggleEnabled, title, toggleMenu, search })
         <Template name={'userPanelTemplate11'}>
           <UserPanel menuMode={'list'} />
         </Template>
-
       </Toolbar>
     </header>
   )

@@ -86,12 +86,13 @@ export default function AppLayout({ title, children }) {
         closeOnOutsideClick={onOutsideClick}
         openedStateMode={isLarge ? 'shrink' : 'overlap'}
         revealMode={isXSmall ? 'slide' : 'expand'}
-        minSize={isXSmall ? 0 : 60}
-        maxSize={250}
+        minSize={isXSmall ? 0 : 36}
+        maxSize={240}
         shading={isLarge ? false : true}
         opened={menuStatus === MenuStatus.Closed ? false : true}
         template={'menu'}
         animationEnabled={false}
+        
       >
         <div className={'container'}>
           <ScrollView ref={scrollViewRef} className={'layout-body with-footer'}>

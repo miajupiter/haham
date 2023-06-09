@@ -4393,13 +4393,13 @@
 }
 .dx-tabs-nav-button.dx-button.dx-tabs-nav-button.dx-button-has-icon:not(.dx-button-has-text) {
   background-color: transparent;
-  color: rgba(255,255,255,.54);
+  color: rgba(182,237,130,.73);
   -webkit-box-shadow: none;
   box-shadow: none;
   border-radius: 0;
 }
 .dx-tabs-nav-button.dx-button.dx-tabs-nav-button.dx-button-has-icon:not(.dx-button-has-text) .dx-icon {
-  color: rgba(255,255,255,.54);
+  color: rgba(182,237,130,.73);
 }
 .dx-tabs-nav-button.dx-button.dx-tabs-nav-button.dx-button-has-icon:not(.dx-button-has-text).dx-state-focused,
 .dx-tabs-nav-button.dx-button.dx-tabs-nav-button.dx-button-has-icon:not(.dx-button-has-text).dx-state-hover {
@@ -4424,7 +4424,7 @@
   color: rgba(255,255,255,.35);
 }
 .dx-tabs-nav-button.dx-button.dx-tabs-nav-button.dx-button-has-icon:not(.dx-button-has-text) .dx-inkripple-wave {
-  background-color: rgba(255,255,255,.2);
+  background-color: rgba(182,237,130,.2);
 }
 .dx-tabs-nav-button .dx-button-content {
   padding: 0;
@@ -7598,7 +7598,7 @@
 }
 .dx-searchbox .dx-icon-search::before {
   content: "\f027";
-  color: rgba(255,255,255,.54);
+  color: rgba(182,237,130,.73);
 }
 .dx-searchbox.dx-editor-underlined .dx-icon-search {
   position: absolute;
@@ -8310,7 +8310,7 @@
   font-size: 16px;
 }
 .dx-list-group-header .dx-list-group-header-indicator {
-  color: rgba(255,255,255,.54);
+  color: rgba(182,237,130,.73);
 }
 .dx-list-collapsible-groups .dx-list-group-header .dx-list-group-header-indicator {
   font: 24px/1 DXIcons;
@@ -8329,7 +8329,7 @@
   content: none;
 }
 .dx-list-item .dx-icon-toggle-delete {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3C!--%20Generator%3A%20Adobe%20Illustrator%2024.0.1%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200)%20%20--%3E%0A%3Csvg%20version%3D%221.1%22%20id%3D%22dx_l_3%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20style%3D%22enable-background%3Anew%200%200%2024%2024%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cpath%20style%3D%22fill%3Argba%28255,%20255,%20255,%200.54%29%3B%22%20d%3D%22M12%2C2C6.5%2C2%2C2%2C6.5%2C2%2C12c0%2C5.5%2C4.5%2C10%2C10%2C10s10-4.5%2C10-10C22%2C6.5%2C17.5%2C2%2C12%2C2z%20M18%2C13H6v-2h12V13z%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3C!--%20Generator%3A%20Adobe%20Illustrator%2024.0.1%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200)%20%20--%3E%0A%3Csvg%20version%3D%221.1%22%20id%3D%22dx_l_3%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20style%3D%22enable-background%3Anew%200%200%2024%2024%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cpath%20style%3D%22fill%3Argba%28182,%20237,%20130,%200.73%29%3B%22%20d%3D%22M12%2C2C6.5%2C2%2C2%2C6.5%2C2%2C12c0%2C5.5%2C4.5%2C10%2C10%2C10s10-4.5%2C10-10C22%2C6.5%2C17.5%2C2%2C12%2C2z%20M18%2C13H6v-2h12V13z%22%2F%3E%0A%3C%2Fsvg%3E%0A");
   background-size: 100%;
 }
 .dx-list-item.dx-state-active,
@@ -8350,7 +8350,7 @@
   margin-bottom: 8px;
 }
 .dx-list-item .dx-icon {
-  color: rgba(255,255,255,.54);
+  color: rgba(182,237,130,.73);
 }
 .dx-list-item.dx-list-item-ghost-reordering.dx-state-focused.dx-state-hover {
   color: #fff;
@@ -8479,7 +8479,7 @@
 }
 .dx-list-item-after-bag .dx-list-reorder-handle {
   font: 24px/24px DXIcons;
-  color: rgba(255,255,255,.27);
+  color: rgba(182,237,130,.27);
   width: 38.4px;
   height: 38.4px;
   background-position: 7px 7px;
@@ -12937,7 +12937,7 @@
   height: 100%;
   font: 24px/24px DXIcons;
   width: 24px;
-  color: rgba(255,255,255,.54);
+  color: rgba(182,237,130,.73);
   text-align: center;
 }
 .dx-lookup-arrow::before {
@@ -13478,7 +13478,7 @@
   top: 10px;
   right: 16px;
   font-weight: 400;
-  color: rgba(255,255,255,.38);
+  color: rgba(182,237,130,.38);
   content: "\f016";
   font-family: DXIcons;
   font-size: 24px;
@@ -15853,7 +15853,7 @@
   font-size: 24px;
   text-align: center;
   line-height: 24px;
-  color: rgba(255,255,255,.54);
+  color: rgba(182,237,130,.73);
 }
 .dx-row.dx-row-focused .dx-datagrid-adaptive-more {
   color: inherit;
@@ -18243,7 +18243,7 @@ input.dx-hidden {
   font-size: 24px;
   text-align: center;
   line-height: 24px;
-  color: rgba(255,255,255,.54);
+  color: rgba(182,237,130,.73);
 }
 .dx-row.dx-row-focused .dx-treelist-adaptive-more {
   color: inherit;
@@ -19703,7 +19703,7 @@ input.dx-hidden {
   width: 24px;
 }
 .dx-context-menu .dx-menu-item .dx-menu-item-content .dx-menu-item-popout-container .dx-menu-item-popout {
-  color: rgba(255,255,255,.54);
+  color: rgba(182,237,130,.73);
   font: 24px/24px DXIcons;
   text-align: center;
 }
@@ -23074,7 +23074,7 @@ input.dx-hidden {
   color: #f44336;
 }
 .dx-filterbuilder-overlay.dx-filterbuilder-operations .dx-treeview-item .dx-icon {
-  color: rgba(255,255,255,.54);
+  color: rgba(255,255,255,.73);
   width: 14px;
   height: 14px;
   background-position: 0 0;

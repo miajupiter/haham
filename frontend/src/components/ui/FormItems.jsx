@@ -7,7 +7,7 @@ import * as Dx from 'devextreme-react'
 import notify from 'devextreme/ui/notify'
 import config from 'devextreme/core/config'
 import { t } from '../../utils/translate'
-import './Editors.scss'
+import './FormItems.scss'
 
 export function useTitle(title) {
   React.useEffect(() => {
@@ -16,7 +16,7 @@ export function useTitle(title) {
     return () => {
       document.title = prevTitle
     }
-  },[])
+  },[title])
 }
 
 config({
@@ -135,6 +135,7 @@ export function Link(props = { ...RcLink.prototype.props }) {
 			<RcLink
 				className='link'
 				{...props}>
+		
 				{t(props.children)}
 			</RcLink>
 		</div>

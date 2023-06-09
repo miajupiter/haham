@@ -1,12 +1,15 @@
 @import "../../assets/styles/main.scss";
-@import "../../assets/styles/variables.additional.scss";
+@import "../../assets/styles/variables.base.scss";
+
+$side-panel-min-width:36px;
 
 .side-navigation-menu {
   display: flex;
   flex-direction: column;
   min-height: 100%;
   height: 100%;
-  width: 250px !important;
+  width: 240px !important;
+  
   background-color: #090912;
   .menu-container {
     min-height: 100%;
@@ -28,6 +31,8 @@
           height: 24px;
           font-size: 24px;
           margin: 0 !important;
+          vertical-align: middle;
+          color: $base-icon-color;
         }
       }
       // ##
@@ -52,13 +57,14 @@
       .dx-treeview-node {
         &[aria-level='1'] {
           font-weight: bold;
-          border-bottom: 1px solid $base-border-color;
+          border-bottom: rgba(cornflowerblue,.16) solid thin;
+          // border-bottom: #8b8bfb20 solid thin;
         }
   
         &[aria-level='2'] .dx-treeview-item-content {
           font-weight: normal;
           // padding: 0 $side-panel-min-width;
-          padding: 0 16px;
+          padding: 0 8px;
         }
       }
       // ##
@@ -88,7 +94,11 @@
         color: inherit;
       }
     }
-    // ##
+    
+    .dx-scrollable-container {
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
   }
 }
 

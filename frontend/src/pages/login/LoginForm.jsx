@@ -1,4 +1,4 @@
-import React, { useState, useRef, useCallback, useEffect } from 'react'
+import React, { useState, useRef, useCallback } from 'react'
 import { useNavigate } from 'react-router-dom'
 // import {
 //   Label, ButtonItem, ButtonOptions,
@@ -7,18 +7,12 @@ import { useNavigate } from 'react-router-dom'
 // } from 'devextreme-react/form'
 import {
 	TextBox,
-	CheckBox,
-	Switch,
 	Button,
-	SelectBox,
-	Link,
 	toast,
   useTitle,
-  Label
-} from '../../components/ui/Editors'
-import LoadIndicator from 'devextreme-react/load-indicator'
-// import notify from 'devextreme/ui/notify'
-// import { useAuth } from '../../providers/auth-provider'
+  
+} from '../../components'
+
 import * as api from '../../providers/_api'
 
 import { isValidEmail, isValidTelephone } from '../../utils/util'

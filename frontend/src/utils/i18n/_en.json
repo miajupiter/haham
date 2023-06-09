@@ -44,5 +44,15 @@
   "Save":"Save",
   "Undelete":"Undelete",
   "Cancel changes":"Cancel changes",
+  "Network error":"Network error",
+  "Machine":"Machine",
+  "Machine Name":"Machine Name",
+  "Date":"Date",
+  "Log Date":"Log Date",
+  "Status":"Status",
+  "Passive":"Passive",
+  "Transferred":"Transferred",
+  "trueText":"Yes",
+  "falseText":"No",
   "turkish":"Turkish"
 }

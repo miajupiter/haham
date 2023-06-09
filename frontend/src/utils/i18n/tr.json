@@ -44,5 +44,15 @@
   "Save":"Kaydet",
   "Undelete":"Silinenleri geri al",
   "Cancel changes":"Değişiklikleri iptal et",
+  "Network error":"Bağlantı hatası",
+  "Machine":"Makine",
+  "Machine Name":"Makine Adı",
+  "Date":"Tarih",
+  "Log Date":"Kayıt Tarihi",
+  "Status":"Durum",
+  "Passive":"Pasif",
+  "Transferred":"Transfer edildi",
+  "trueText":"Evet",
+  "falseText":"Hayır",
   "turkish":"Türkçe"
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import './Home.scss'
-import { Button, toast } from '../../components/ui/Editors'
+import { toast, Button } from '../../components'
 import { ReactComponent as Logo } from '../../assets/images/logo.svg'
 import { ReactComponent as SamplingIcon } from '../../assets/icons/Sampling.svg'
 

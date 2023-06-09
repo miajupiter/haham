@@ -9,6 +9,14 @@
   .dx-toolbar .dx-toolbar-item.menu-button>.dx-toolbar-item-content .dx-icon {
     color: $base-accent;
   }
+
+  .header-toolbar.dx-toolbar {
+      width: 100%;
+      background-color: rgb(25 25 43 / 50%);
+      color: greenyellow;
+      padding: 0;
+      overflow: visible;
+  }
 }
 
 .dx-toolbar.header-toolbar .dx-toolbar-items-container .dx-toolbar-after {
@@ -28,6 +36,8 @@
 .header-title .dx-item-content {
   padding: 0;
   margin: 0;
+  color:$base-icon-color;
+  font-size: 28px;
 }
 
 .dx-theme-generic {
