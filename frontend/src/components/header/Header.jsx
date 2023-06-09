@@ -33,8 +33,8 @@ export default function Header({
           location={'before'}
           cssClass={'header-title'}
         >
-          <Button onClick={navigateToHome} stylingMode='text' style={{color:'goldenrod', backgroundColor:'transparent'}} >
-            <MiaLogo height={45} width={200} />
+          <Button onClick={navigateToHome} stylingMode='text' style={{color:'goldenrod', backgroundColor:'transparent'}} hoverStateEnabled={false} >
+            <MiaLogo height={45} width={200} style={{color:'goldenrod'}} />
           </Button>
         </Item>
         <Item location={'after'}>

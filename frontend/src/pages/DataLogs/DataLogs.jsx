@@ -1,42 +1,35 @@
 import React from 'react'
-import { MJGrid, Column } from '../../components/ui/Grid'
+import { Grid } from '../../components/ui/Grid'
 export default function DataLogs() {
+  
   return (
     <React.Fragment>
       <h2 className={'content-block'}>Data Logs</h2>
       <div className={'content-block'}>
-        <MJGrid
+        <Grid
           // dataSource={customDataSource}
-          // columns={[
-          //   new Column({ dataField: 'logDate', caption:''  }),
-          //   'machine.name',
-          //   'status',
-          //   'value',
-          //   'transferred',
-          // ]}
-          
-        >
-          <Column
-            dataField={'logDate'}
-            width={120}
-            dataType={'date'}
-            caption={'Date'}
-            format={'yyyy-MM-dd hh:mm:ss'}
-          />
-
-          <Column
-            dataField={'machine.name'}
-            width={190}
-            caption={'Machine Name'}
-          />
-          <Column dataField={'status'} caption={'Status'} />
-
-          <Column
-            dataField={'transferred'}
-            caption={'Transferred'}
-            dataType={'boolean'}
-          />
-        </MJGrid>
+          keyExpr={'_id'}
+          columnResizingMode='widget'
+          columnAutoWidth={true}
+          cacheEnabled={true}
+          columns={ [
+            {
+              dataField: 'logDate',
+              caption: 'Date',
+              dataType: 'date',
+              format: 'yyyy-MM-dd hh:mm:ss',
+            },
+            { dataField: 'machine.name', caption: 'Machine Name' },
+            { dataField: 'status', caption: 'Status' },
+            { dataField: 'value', caption: 'Value' },
+            {
+              dataField: 'transferred',
+              caption: 'Transferred',
+              
+            },
+          ]}
+        />
+        
       </div>
     </React.Fragment>
   )
