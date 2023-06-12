@@ -184,7 +184,7 @@ function sendError(err, req, res) {
       .substring(baseUrl.length + 1)
       .split('?')[0]
       .split('/')[0]
-    response.documentationUrl = `${process.env.ERROR_DOCUMENTATION_URI}?ctl=${ctl}&func=${func}`
+    response.docUrl = `${process.env.ERROR_DOCUMENTATION_URI}?ctl=${ctl}&func=${func}`
   }
 
   res.status(statusCode).json(response)

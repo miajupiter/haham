@@ -1,13 +1,12 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import CustomStore from 'devextreme/data/custom_store'
 import * as api from '../../providers/_api'
-import * as DxGrid from 'devextreme-react/data-grid'
+import { DataGrid } from 'devextreme-react/data-grid'
 import './Grid.scss'
 import { t } from '../../utils/translate'
-import { PropTypes } from 'prop-types'
-import { Button } from './FormItems'
+import { toast } from './FormItems'
 
-export { default as DxGrid } from 'devextreme-react/data-grid'
+import { Toolbar, Item, Button, ToolbarItem } from 'devextreme-react/data-grid'
 
 const pager = {
   allowedPageSizes: [10, 20, 50, 'all'],
@@ -27,10 +26,8 @@ const sorting = {
 
 const columnChooser = {
   enabled: true,
-  // mode: 'select',
   mode: 'drapAndDrop',
   title: t('Column chooser'),
-  // allowSearch: true,
   allowSorting: true,
 }
 
@@ -55,13 +52,13 @@ const editing = {
   // },
   confirmDelete: true,
   editColumnName: null,
-  editRowKey: null,
+  editRowKey: '_id',
   form: null,
-  mode: 'row',
-  newRowPosition: 'last',
+  mode: 'cell',
+  newRowPosition: 'first',
   popup: null,
-  refreshMode: 'repaint',
-  selectTextOnEditStart: false,
+  refreshMode: 'reshape',
+  selectTextOnEditStart: true,
   startEditAction: 'dblClick',
   texts: {
     addRow: t('Add a row'),
@@ -79,69 +76,32 @@ const editing = {
   useIcons: true,
 }
 
-export function Grid(props = { ...DxGrid.DataGrid.prototype.props }) {
-  const [pageIndex, setPageIndex] = useState(0) // 0 based page number
+const toolbar =(<Toolbar>
+    <Item location={'before'} width={'auto'}>
+    <h2>Deneme1 dfdf dfd df</h2>
+    </Item>
+
+    <Item location={'center'} name='addRowButton' />
+    <Item name='columnChooserButton' />
+  </Toolbar>)
+
+export function Grid(props = { ...DataGrid.prototype.props }) {
+  const [pageIndex, setPageIndex] = useState(0)
   const [pageSize, setPageSize] = useState(10)
-  const [pageCount, setPageCount] = useState(0)
-  const [totalCount, setTotalCount] = useState(0)
+  // const [pageCount, setPageCount] = useState(0)
+  // const [totalCount, setTotalCount] = useState(0)
 
   if (props.columns) {
     props.columns.forEach((e) => (e.caption = t(e.caption)))
   }
-  // [
-  //   'filter',
-  //   'group',
-  //   'groupSummary',
-  //   'parentIds',
-  //   'requireGroupCount',
-  //   'requireTotalCount',
-  //   'searchExpr',
-  //   'searchOperation',
-  //   'searchValue',
-  //   'select',
-  //   'sort',
-  //   'skip',
-  //   'take',
-  //   'totalSummary',
-  //   'userData'
-  // ]
 
-  const customDataSource = new CustomStore({
-    key: '_id',
-
-    load: (loadOptions) => {
-      console.log('loadOptions:', loadOptions)
-      let params = {
-        page: pageIndex + 1,
-        pageSize: pageSize,
-      }
-      if (loadOptions) {
-        if (loadOptions.take) params.pageSize = loadOptions.take
-        if (loadOptions.skip) {
-          params.page = Math.round(loadOptions.skip / params.pageSize) + 1
-        }
-      }
-
-      return api
-        .getData('/dataLog', { params: params })
-        .then((response) => {
-          setTotalCount(response.data.recordCount)
-          return {
-            data: (response.data && response.data.docs) || response.data || [],
-            totalCount: (response.data && response.data.recordCount) || 0,
-          }
-        })
-        .catch(() => {
-          throw new Error(t('Network error'))
-        })
-    },
-  })
+  const customDataSource = RestApiDataSource('/dataLog')
 
   return (
-    <DxGrid.DataGrid
+    <DataGrid
       keyExpr={'_id'}
       className={'dx-card wide-card bg-transparent'}
-      style={{ borderRadius: '12px', width: '100%' }}
+      style={{ borderRadius: '8px', width: '100%' }}
       dataSource={customDataSource}
       highlightChanges={true}
       hoverStateEnabled={true}
@@ -157,15 +117,17 @@ export function Grid(props = { ...DxGrid.DataGrid.prototype.props }) {
       allowColumnResizing={true}
       allowColumnReordering={true}
       dateSerializationFormat={'yyyy-MM-dd hh:mm:ss'}
+      
       pager={pager}
       paging={{
         enabled: true,
         pageIndex: pageIndex,
         pageSize: pageSize,
       }}
+      scrolling={{ mode: 'standard', showScrollbar: true }}
       remoteOperations={true}
       sorting={sorting}
-      ColumnChooser={columnChooser}
+      columnChooser={columnChooser}
       stateStoring={stateStoring}
       loadPanel={null}
       searchPanel={searchPanel}
@@ -181,52 +143,89 @@ export function Grid(props = { ...DxGrid.DataGrid.prototype.props }) {
         showCheckBoxesMode: 'always',
         selectAllMode: 'page',
         mode: 'multiple',
+        // mode: 'single',
         deferred: false,
       }}
-      wordWrapEnabled={false}
-      height={'auto'}
-      filterRow={{ visible: true }}
+      wordWrapEnabled={true}
+      height={'100%'}
+      width={'100%'}
+      // filterRow={{ visible: true }}
       headerFilter={{ visible: true }}
-      toolbar={{
-        visible: true,
-        items: [
-          () => (
-            <>
-              <Button text='OK' stylingMode='text' className='bg-transparent' />
-            </>
-          ),
-          'exportButton',
-          'addRowButton',
-          'columnChooserButton',
-          'revertButton',
-          'saveButton',
-          'groupPanel',
-        ],
-      }}
+      // toolbar={{
+      //   visible:true,
+      //   items:[
+      //     {name:'columnChooserButton', location:'before'},
+      //     {template:()=><ToolbarItem width={150}><div>Deneme1</div></ToolbarItem>, width:220},
+      //     {name:'addRowButton', },
+          
+      //   ]
+      // }}
       editing={editing}
       {...props}
     >
-      {props.children}
-    </DxGrid.DataGrid>
-    // <React.Fragment>
-    //   <h2 className={'content-block'}>Data Logs</h2>
-    //   <div className={'content-block'}>
-
-    //   </div>
-    // </React.Fragment>
+      {toolbar}
+    </DataGrid>
   )
 }
 
-export function MiaColumn(props = { ...DxGrid.Column.prototype.props }) {
-  return (
-    <>
-      <DxGrid.Column
-        // name={props.name || props.dataField || props.dataType}
-        // trueText={t('trueText')}
-        // falseText={t('falseText')}
-        {...props}
-        // caption={t(props.caption || '')}
-      />
-    </>
-  )
+export function RestApiDataSource(func, key = '_id') {
+  return new CustomStore({
+    key: key,
+    load: (loadOptions) => {
+      console.log('loadOptions:', loadOptions)
+      let params = {
+        page: 1,
+        pageSize: 10,
+      }
+      if (loadOptions) {
+        if (loadOptions.take) params.pageSize = loadOptions.take
+        if (loadOptions.skip) {
+          params.page = Math.round(loadOptions.skip / params.pageSize) + 1
+        }
+      }
+
+      return api
+        .getData(`${func}`, { params: params })
+        .then((response) => {
+          return {
+            data: (response.data && response.data.docs) || response.data || [],
+            totalCount: (response.data && response.data.recordCount) || 0,
+          }
+        })
+        .catch((err) => toast(err, 'error'))
+    },
+    insert: (values) => {
+      console.log('insert values:', values)
+      return api
+        .post(`${func}`, { data: values })
+        .then((resp) => {
+          toast('Successful', 'success')
+          console.log('insert resp:', resp)
+          return resp.data
+        })
+        .catch((err) => toast(err, 'error'))
+    },
+    update: (key, values) => {
+      console.log('update key, values:', key, values)
+      return api
+        .put(`${func}/${key}`, { data: values })
+        .then((resp) => {
+          toast('Successful', 'success')
+          console.log('update resp:', resp)
+          return resp.data
+        })
+        .catch((err) => toast(err, 'error'))
+    },
+    remove: (key) => {
+      console.log('delete key:', key)
+      return api
+        .remove(`${func}/${key}`)
+        .then((resp) => {
+          toast('Successful', 'success')
+          console.log('remove resp:', resp)
+          return true
+        })
+        .catch((err) => toast(err, 'error'))
+    },
+  })
 }

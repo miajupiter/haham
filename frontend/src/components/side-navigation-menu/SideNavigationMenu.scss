@@ -10,7 +10,7 @@ $side-panel-min-width:36px;
   height: 100%;
   width: 240px !important;
   
-  background-color: #090912;
+  background-color: $base-bg;
   .menu-container {
     min-height: 100%;
     display: flex;
@@ -57,7 +57,7 @@ $side-panel-min-width:36px;
       .dx-treeview-node {
         &[aria-level='1'] {
           font-weight: bold;
-          border-bottom: rgba(cornflowerblue,.16) solid thin;
+          // border-bottom: rgba(cornflowerblue,.06) solid thin;
           // border-bottom: #8b8bfb20 solid thin;
         }
   
@@ -97,7 +97,8 @@ $side-panel-min-width:36px;
     
     .dx-scrollable-container {
       overflow-x: hidden;
-      overflow-y: auto;
+      // overflow-y: auto;
+      overflow-y: hidden;
     }
   }
 }

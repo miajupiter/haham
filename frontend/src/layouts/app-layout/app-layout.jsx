@@ -97,9 +97,9 @@ export default function AppLayout({ title, children }) {
         <div className={'container'}>
           <ScrollView ref={scrollViewRef} className={'layout-body with-footer'}>
             <div className={'content'}>{children}</div>
-            <footer className={'content-block footer'}>
+            {/* <footer className={'content-block footer'}>
               Copyright © {new Date().getFullYear()} {appInfo.copyright}
-            </footer>
+            </footer> */}
 
           </ScrollView>
         </div>

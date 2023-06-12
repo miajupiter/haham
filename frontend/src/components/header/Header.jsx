@@ -4,7 +4,7 @@ import Button from 'devextreme-react/button'
 import UserPanel from '../user-panel/UserPanel'
 import './Header.scss'
 import { Template } from 'devextreme-react/core/template'
-import { ReactComponent as MiaLogo } from '../../assets/images/logo.svg'
+import { ReactComponent as MiaLogo } from '../../assets/images/logo-2colors.svg'
 import { useNavigate } from 'react-router-dom'
 
 export default function Header({

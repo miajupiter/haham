@@ -493,3 +493,7 @@ exports.isValidTelephone = function (tel) {
 	}
 	return true
 }
+
+exports.screen=function(width) {
+  return (width < 700) ? 'sm' : 'lg'
+}

@@ -129,19 +129,10 @@ global.epValidateSync = (doc, reject) => {
   let err = doc.validateSync()
   if (err) {
     let keys = Object.keys(err.errors)
-    let returnError = { code: 'HATALI_VERI', message: '' }
-    if (keys.length == 1) {
-      returnError.message = err.errors[keys[0]].message
-    } else {
-      keys.forEach((e, index) => {
-        returnError.message += `#${(index + 1).toString()} : ${err.errors[e].message}`
-        if (index < keys.length - 1)
-          returnError.message += '\n'
-      })
-
-    }
-
-    reject(returnError)
+    let errList=[]
+    keys.forEach(e=>errList.push(err.errors[e].message))
+    
+    reject(errList.join('\n'))
     return false
   } else {
     return true
