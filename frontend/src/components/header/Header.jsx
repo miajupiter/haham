@@ -9,8 +9,8 @@ import { useNavigate } from 'react-router-dom'
 
 export default function Header({
   menuToggleEnabled,
-  title,
   toggleMenu,
+  title,
   search,
 }) {
   const navigate = useNavigate()
@@ -20,15 +20,15 @@ export default function Header({
   return (
     <header className={'header-component'}>
       <Toolbar className={'header-toolbar'}>
-        <Item
+         <Item
           visible={menuToggleEnabled}
-          location={'before'}
+          location={'after'}
           widget={'dxButton'}
           cssClass={'menu-button'}
         >
           <Button icon='menu' stylingMode='text' onClick={toggleMenu} />
         </Item>
-
+{/*
         <Item
           location={'before'}
           cssClass={'header-title'}
@@ -36,8 +36,8 @@ export default function Header({
           <Button onClick={navigateToHome} stylingMode='text' style={{color:'goldenrod', backgroundColor:'transparent'}} hoverStateEnabled={false} >
             <MiaLogo height={45} width={200} style={{color:'goldenrod'}} />
           </Button>
-        </Item>
-        <Item location={'after'}>
+        </Item> */}
+        {/* <Item location={'after'}>
           <Button icon={'search'} onClick={search} />
         </Item>
         <Item
@@ -56,7 +56,7 @@ export default function Header({
         </Item>
         <Template name={'userPanelTemplate11'}>
           <UserPanel menuMode={'list'} />
-        </Template>
+        </Template> */}
       </Toolbar>
     </header>
   )

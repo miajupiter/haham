@@ -48,9 +48,9 @@ input:-webkit-autofill:active {
   background-color: #393952;
 }
 
-// ::-webkit-scrollbar-thumb:hover {
-// 	background-color: rgba(greenyellow,.51)
-// }
+::-webkit-scrollbar-thumb:hover {
+	background-color: rgba(greenyellow,.51)
+}
 
 .app {
   // background-color: darken($base-bg, 7.00);
@@ -93,7 +93,8 @@ input:-webkit-autofill:active {
 }
 
 .app-layout .dx-drawer {
-  height: calc(100% - 56px);
+  // height: calc(100% - 56px);
+  height: 100%;
 }
 
 .app-layout .dx-drawer-panel-content {

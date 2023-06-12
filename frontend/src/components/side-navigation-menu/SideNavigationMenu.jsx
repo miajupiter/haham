@@ -68,7 +68,7 @@ export default function SideNavigationMenu(props) {
       ref={getWrapperRef}
     >
       {children}
-      <div className={'menu-container'}>
+      <div className={'menu-container'} style={{left:'unset', right:'0px'}}>
         <TreeView
           ref={treeViewRef}
           items={items}
@@ -80,6 +80,8 @@ export default function SideNavigationMenu(props) {
           onContentReady={onMenuReady}
           width={'100%'}
           animationEnabled={false}
+          activeStateEnabled={true}
+
         />
       </div>
     </div>

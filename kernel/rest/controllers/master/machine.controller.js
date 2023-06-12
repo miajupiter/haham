@@ -26,7 +26,7 @@ module.exports = (member, dbModel, req) =>
 
 function getOne(member, dbModel, req) {
   return new Promise((resolve, reject) => {
-    dbModel.dataLog
+    dbModel.machine
       .findOne({ _id: req.params.param1 })
       .then(resolve)
       .catch(reject)
@@ -49,15 +49,15 @@ function getList(member, dbModel, req) {
       options.limit = req.query.pageSize || req.query.limit
 
     let filter = {}
-    if ((req.query.transferred || '') != '') {
-      filter.transferred = req.query.transferred
+    if ((req.query.passive || '') != '') {
+      filter.passive = req.query.passive
     }
 
-    if ((req.query.machine || '') != '') {
-      filter.machine = req.query.machine
+    if ((req.query.status || '') != '') {
+      filter.status = req.query.status
     }
 
-    dbModel.dataLog.paginate(filter, options).then(resolve).catch(reject)
+    dbModel.machine.paginate(filter, options).then(resolve).catch(reject)
   })
 }
 
@@ -65,7 +65,7 @@ function post(member, dbModel, req) {
   return new Promise((resolve, reject) => {
     let data = req.body || {}
     data._id = undefined
-    let newDoc = new dbModel.dataLog(data)
+    let newDoc = new dbModel.machine(data)
 
     if (!epValidateSync(newDoc, reject)) return
     newDoc.save().then(resolve).catch(reject)
@@ -78,12 +78,12 @@ function put(member, dbModel, req) {
     let data = req.body || {}
     delete data._id
     
-    dbModel.dataLog
+    dbModel.machine
       .findOne({ _id: req.params.param1 })
       .then((doc) => {
         if (dbnull(doc, reject)) {
           let newDoc=Object.assign(doc,data)
-          // let newDoc=new dbModel.dataLog(Object.assign({}, doc.toJSON(), data))
+          // let newDoc=new dbModel.machine(Object.assign({}, doc.toJSON(), data))
           if (!epValidateSync(newDoc, (err)=>{
             reject(err)
           })) return
@@ -108,11 +108,11 @@ function deleteItem(member, dbModel, req) {
     if (req.params.param1 == undefined) return restError.param1(req, next)
     let data = req.body || {}
     data._id = req.params.param1
-    // dbModel.dataLog
+    // dbModel.machine
     //   .deleteOne({ _id: req.params.param1 })
     //   .then(resolve)
     //   .catch(reject)
-    dbModel.dataLog.removeOne(member, { _id: data._id }).then(resolve).catch(err=>{
+    dbModel.machine.removeOne(member, { _id: data._id }).then(resolve).catch(err=>{
       console.log(err)
       reject(err)
     })
