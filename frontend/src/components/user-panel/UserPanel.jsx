@@ -52,15 +52,16 @@ export default function UserPanel({ menuMode }) {
 					showEvent={'dxclick'}
 					width={210}
 					cssClass={'user-menu'}>
-					<Position
-						my={'top center'}
-						at={'bottom center'}
+					<Position 
+						my={{x:0,y:400}}
+						// my={'bottom left'}
+						// at={'bottom left'}
 					/>
 				</ContextMenu>
 			)}
 			{menuMode === 'list' && (
 				<List
-					className={'dx-toolbar-menu-action'}
+					className={'dx-toolbar-menu-action'} menuMode='slide'
 					items={menuItems}
 				/>
 			)}

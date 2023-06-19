@@ -51,18 +51,29 @@ export const navigation = [
     icon: 'globe',
   },
   {
-    text: 'Machines',
-    path: '/machines2',
-    icon: 'globe',
-  },
-  {
     text: 'Tasks',
     path: '/tasks3',
     icon: 'globe',
   },
+  // {
+  //   text: 'Profile',
+  //   icon: 'user',
+  //   items: [
+  //     {
+  //       text: 'My Profile',
+  //       path: '/profile',
+  //       icon: 'user',
+  //     },
+  //     {
+  //       text: 'Log out',
+  //       path: '/logout',
+  //       icon: 'runner',
+  //     },
+  //   ],
+  // },
   {
     text: 'Machines',
     path: '/machines3',
     icon: 'globe',
-  }
+  },
 ]

@@ -1,7 +1,7 @@
 @import "../../assets/styles/main.scss";
 @import "../../assets/styles/variables.base.scss";
 
-$side-panel-min-width:36px;
+
 
 .side-navigation-menu {
   display: flex;
@@ -9,14 +9,17 @@ $side-panel-min-width:36px;
   min-height: 100%;
   height: 100%;
   width: 240px !important;
+  position: relative;
   
+
   background-color: $base-bg;
   .menu-container {
     min-height: 100%;
     display: flex;
     flex: 1;
-
+    padding-bottom: 60px;
     .dx-treeview {
+      height: calc(100% - 60px);
       // ## Long text positioning
       white-space: nowrap;
       // ##
@@ -101,9 +104,53 @@ $side-panel-min-width:36px;
       overflow-y: hidden;
     }
   }
+
+  .kullanici-panel {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: start;
+    // background-color: green;
+    
+    // .user-image {
+    //   background: url(https://randomuser.me/api/portraits/women/12.jpg) no-repeat #fff;
+    //   background-size: cover;
+    //   width: 32px;
+    //   height: 32px;
+    //   border-radius: 50%;
+    // }
+
+    .user-img {
+      width: 32px;
+      height: 32px;
+      
+      border-radius: 50%;
+    }
+
+    .dx-button-content {
+      color:#d7d7d7;
+      padding-left: 12px;
+      padding-right: 12px;
+      display: flex;
+      justify-content: start;
+      i {
+        font-size: 22px;
+        color: $base-icon-color;
+      }
+    }
+  }
 }
 
 .dx-drawer-overlap.pre-init-blink-fix {
   @import "../../utils/patches.scss";
   @include menu-pre-init-patch;
+}
+
+
+.dx-toolbar .dx-toolbar-items-container {
+  height: 42px;
+  overflow: visible;
 }

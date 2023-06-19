@@ -21,7 +21,7 @@ const MenuStatus = {
 export default function AppLayout({ title, children }) {
   const scrollViewRef = useRef(null)
   const navigate = useNavigate()
-  const { isXSmall, isLarge } = useScreenSize()
+  const { isXSmall, isLarge,isMedium, isSmall } = useScreenSize()
   const [patchCssClass, onMenuReady] = useMenuPatch()
   const [menuStatus, setMenuStatus] = useState(
     isLarge ? MenuStatus.Opened : MenuStatus.Closed
@@ -81,11 +81,13 @@ export default function AppLayout({ title, children }) {
     <div className={'app-layout'}>
       <Drawer
         className={['drawer', patchCssClass].join(' ')}
+        // className={'drawer'}
         position={'before'}
         closeOnOutsideClick={onOutsideClick}
-        openedStateMode={isLarge ? 'shrink' : 'overlap'}
+        // openedStateMode={isLarge ? 'shrink' : 'overlap'}
+        openedStateMode={isMedium || isLarge ? 'shrink' : 'overlap'}
         revealMode={isXSmall ? 'slide' : 'expand'}
-        minSize={isXSmall ? 0 : 36}
+        minSize={isXSmall ? 0 : 50}
         maxSize={240}
         shading={isLarge ? false : true}
         opened={menuStatus === MenuStatus.Closed ? false : true}

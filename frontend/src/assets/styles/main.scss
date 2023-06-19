@@ -1,6 +1,7 @@
 @import './variables.base.scss';
 
 $base-icon-color: rgba(greenyellow, 0.6);
+$side-panel-min-width:50px;
 
 @import './dataGrid.scss';
 
@@ -98,7 +99,7 @@ input:-webkit-autofill:active {
 }
 
 .app-layout .dx-drawer-panel-content {
-  border-right: rgba($base-border-color, 0.16) solid thin;
+  border-right: rgba($base-border-color, 0.86) solid thin;
   // border-right: #8b8bfb20 solid thin;
 }
 
@@ -143,7 +144,7 @@ input:-webkit-autofill:active {
   }
 }
 
-$side-panel-min-width: 36px;
+$side-panel-min-width: 50px;
 
 html,
 body {

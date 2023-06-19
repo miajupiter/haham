@@ -39,8 +39,8 @@ export function TextBox(
 	props = { dataField: PropTypes.string, ...Dx.TextBox.prototype.props },
 ) {
 	return (
-		<div className='zz-editor'>
 			<Dx.TextBox
+				className='zz-textbox'
 				labelMode='floating'
 				stylingMode='outlined'
 				showClearButton={true}
@@ -50,7 +50,6 @@ export function TextBox(
 				label={t(props.label)}
 				placeholder={t(props.placeholder || ' ')}
 			/>
-		</div>
 	)
 }
 
@@ -58,14 +57,12 @@ export function CheckBox(
 	props = { dataField: PropTypes.string, ...Dx.CheckBox.prototype.props },
 ) {
 	return (
-		<div className='zz-editor'>
 			<Dx.CheckBox
 				onEnterKey={enterNext}
 				inputAttr={{ 'data-field': props.dataField }}
 				{...props}
 				text={t(props.text || props.label)}
 			/>
-		</div>
 	)
 }
 
@@ -119,26 +116,22 @@ export function SelectBox(
 
 export function Button(props = { ...Dx.Button.prototype.props }) {
 	return (
-		<div className='zz-editor'>
 			<Dx.Button
 				type='default'
 				{...props}
 				text={t(props.text)}
 			/>
-		</div>
 	)
 }
 
 export function Link(props = { ...RcLink.prototype.props }) {
 	return (
-		<div className='zz-editor'>
 			<RcLink
 				className='link'
 				{...props}>
 		
 				{t(props.children)}
 			</RcLink>
-		</div>
 	)
 }
 
@@ -148,12 +141,10 @@ export function toast(message, type = 'error', timeout = 2000) {
 
 export function Label(props) {
 	return (
-		<div className='zz-editor'>
 			<label
 				className='link'
 				{...props}>
 				{t(props.children)}
 			</label>
-		</div>
 	)
 }
