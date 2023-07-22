@@ -163,22 +163,18 @@ export const MainSidebar = (props) => {
         <Sidebar.Items>
           <Sidebar.ItemGroup>
             <Sidebar.Item icon={HiChartPie}>
-              <ActiveLink href={{hash:`/dashboard`}} >Dashboard</ActiveLink>
+              <ActiveLink href={{hash:`/main/dashboard`}} >Dashboard</ActiveLink>
             </Sidebar.Item>
-            <Sidebar.Collapse icon={HiShoppingBag} label='E-commerce'>
-              <Sidebar.Item href='#/products'>Products</Sidebar.Item>
-              <Sidebar.Item href='#/sales'>Sales</Sidebar.Item>
-              <Sidebar.Item href='#/refunds'>Refunds</Sidebar.Item>
-              <Sidebar.Item href='#/shipping'>Shipping</Sidebar.Item>
+            <Sidebar.Collapse icon={HiShoppingBag} label='Invoice'>
+              <Sidebar.Item>
+                  <ActiveLink href={{hash:`/invoice/inbox`}} >Inbox</ActiveLink>
+              </Sidebar.Item>
+              <Sidebar.Item>
+                  <ActiveLink href={{hash:`/invoice/outbox`}} >Outbox</ActiveLink>
+              </Sidebar.Item>
             </Sidebar.Collapse>
-            <Sidebar.Item icon={HiInbox}   >
-              <ActiveLink href={{hash:`/inbox`}} >Inbox</ActiveLink>
-            </Sidebar.Item>
-            <Sidebar.Item icon={HiInbox} >
-              <ActiveLink href={{hash:`/inbox/invoices`}} >Invoices Inbox</ActiveLink>
-            </Sidebar.Item>
             <Sidebar.Item icon={HiShoppingBag}>
-              <ActiveLink href={{hash:`/inbox/invoice/new`}} >New Invoice</ActiveLink>
+              <ActiveLink href={{hash:`/invoice/outbox/create`}} >Create Outbox Invoice</ActiveLink>
             </Sidebar.Item>
             <Sidebar.Item icon={HiShoppingBag}>
               <ActiveLink href={{hash:`/products`}} >Products</ActiveLink>

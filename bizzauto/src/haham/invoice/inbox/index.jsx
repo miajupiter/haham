@@ -1,7 +1,7 @@
-export const InboxInvoices = (props) => {
+export const InvoiceInbox = (props) => {
   return (
     <>
-      <h2>Invoice Inbox</h2>
+      <h2>Invoice Inbox page</h2>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam quibusdam
         eligendi qui maxime saepe, harum praesentium ab iusto sunt odio?
@@ -17,4 +17,4 @@ export const InboxInvoices = (props) => {
   )
 }
 
-export default InboxInvoices
+export default InvoiceInbox

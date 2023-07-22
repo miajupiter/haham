@@ -1,7 +1,7 @@
-export const NewInvoice = (props) => {
+export const InvoiceOutboxCreate = (props) => {
   return (
     <div>
-      <h2>New Invoice</h2>
+      <h2>InvoiceOutboxCreate</h2>
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore atque
         voluptatum ipsam rerum, voluptatibus velit id error eum? Recusandae
@@ -9,9 +9,9 @@ export const NewInvoice = (props) => {
         assumenda reprehenderit!
       </p>
       <hr />
-      <p>new invoice</p>
+      <p>InvoiceOutboxCreate</p>
     </div>
   )
 }
 
-export default NewInvoice
+export default InvoiceOutboxCreate

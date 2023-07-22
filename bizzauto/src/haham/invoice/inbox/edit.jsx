@@ -1,13 +1,13 @@
 import { useRouter } from 'next/router'
 
-export const EditInvoice = (props) => {
+export const InvoiceInboxEdit = (props) => {
   const router=useRouter()
   return (
     <div>
-      <h2>Edit Invoice</h2>
+      <h2>InvoiceInboxEdit</h2>
       
     </div>
   )
 }
 
-export default EditInvoice
+export default InvoiceInboxEdit
