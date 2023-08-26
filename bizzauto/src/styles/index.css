@@ -2,7 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-@import './font/font-list.css';
+
+
+/* @import '../../node_modules/devextreme/dist/css/dx.dark.css'; */
+
+@import './dx.dark.css';
+@import './dx.light.css';
+
+@import './fonts/font-list.css';
 
 @import './globals.css';
 

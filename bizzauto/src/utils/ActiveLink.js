@@ -5,7 +5,8 @@ function ActiveLink({ children, href }) {
   const router = useRouter()
   const style = {
     // marginRight: 10,
-    color: router.asPath.split('#')[1] === href.hash ? 'red' : 'initial',
+    // color: router.asPath.split('#')[1] === href.hash ? 'red' : 'initial',
+    color: router.pathname === href.pathname ? 'red' : 'initial',
   }
  
   // const handleClick = (e) => {

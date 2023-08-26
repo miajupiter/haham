@@ -1,73 +1,87 @@
-import { Login } from '@/components/Login/Login'
 import ThemeButton from '@/components/Buttons/ThemeButton'
-import { Button } from 'flowbite-react'
 import LogoutButton from '@/components/Buttons/LogoutButton'
-import { basePath } from '../../next.config'
-import { useRouter, withRouter } from 'next/router'
+// import { useRouter, withRouter } from 'next/router'
+import { signIn, signOut, useSession } from 'next-auth/react'
 
-import {
-  MainNavbar,
-  MainPanel,
-  MainSidebar,
-} from '@/components/Layouts/MainLayout'
 import { useEffect, useState } from 'react'
-import {Haham} from '@/haham/index'
 
-export function Home(props) {
-  const router = useRouter()
-  const [page, setPage] = useState()
+export function Home(props){
+  const { data } = useSession()
+  const session=data
 
-  router.events.on('hashChangeStart', (e) => {
-    // console.log('hashChangeStart e:',e.split('#')[1])
-    loadPage(e.split('#/')[1])
-  })
-
-  router.events.on('hashChangeComplete', (e) => {
-    // console.log('hashChangeComplete e:',e.split('#')[1])
-  })
-
-  const loadPage=(pageRoute)=>{
-    const separated=pageRoute.split('/')
-    const obj={
-      module:BriefCase(separated[0]),
-      page:separated.length>1 && BriefCase(separated[1]),
-      func:separated.length>=2 && BriefCase(separated[2] || 'index'),
-      id:separated.length>3 && BriefCase(separated[3] || ''),
-    }
-    if(Haham[obj.module] && Haham[obj.module][obj.page]){
-      if(Haham[obj.module][obj.page][obj.func]){
-        setPage(Haham[obj.module][obj.page][obj.func])
-      }else{
-        setPage(Haham[obj.module][obj.page])
-      }
+  return(
+    <div>
+     {!session && (
+            <>
+              <span className={''}>
+                You are not signed in
+              </span>
+              <a
+                href={`/api/auth/signin`}
+                
+                // onClick={(e) => {
+                //   e.preventDefault()
+                //   signIn()
+                // }}
+              >
+                Sign in
+              </a>
+            </>
+          )}
+          {session?.user && (
+            <>
+              {session.user.image && (
+                <span
+                  style={{ backgroundImage: `url('${session.user.image}')` }}
+                  className='avatar'
+                />
+              )}
+              <span className={''}>
+                <small>Signed in as</small>
+                <br />
+                <strong>{session.user.email ?? session.user.name}</strong>
+              </span>
+              <a
+                href={`/api/auth/signout`}
+                
+                // onClick={(e) => {
+                //   e.preventDefault()
+                //   signOut()
+                // }}
+              >
+                Sign out
+              </a>
+            </>
+          )}
+    <p>
+      <a href='/me' >me</a>
+    </p>
+    <p>
+      <a href='/protected' >protected</a>
+    </p>
+    <p>
+      <a href='/server' >server</a>
+    </p>
+    <p>
+      <a href='/haham' >haham admin panel</a>
+    </p>
+    <p>
+      {/* {data!=null?<button onClick={signOut} >log out</button>:
+      <button onClick={signIn} >Login</button>
+      } */}
       
-    }else{
-      setPage(JSON.stringify(obj,null,2))
-    }
-    
-  }
-
-  useEffect(()=>{
-    if(!page){
-      loadPage(router.asPath.split('#/')[1])
-    }
-  },[router])
-  return (
-    <>
-      <MainNavbar />
-      <MainSidebar />
-      <MainPanel>{page}</MainPanel>
-    </>
+    </p>
+    </div>
   )
 }
 
+
+
+
+
+
 export default Home
 
-// {router.pathname=='/dashboard'?<Dashboard />:<></>}
-//       {router.pathname=='/inbox'?<Inbox />:<></>}
-//       {router.pathname=='/inbox/invoices'?<InboxInvoices />:<></>}
-
-
-function BriefCase(str){
-  return str.length>1?str.substring(0,1).toUpperCase() + str.slice(1):str
-}
+// function BriefCase(str){
+//   return str.length>1?str.substring(0,1).toUpperCase() + str.slice(1):str
+// }

@@ -1,11 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode:true,
-  basePath:'/portal',
-  distDir:'./dist',
-  env:{
-    TESTENV:'test',
-  },
+  basePath:'',
+  // distDir:'./dist',
   generateEtags:false,
   images:{
     //qwerty we will look back here again.

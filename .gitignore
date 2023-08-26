@@ -1,0 +1,8 @@
+.vscode/
+*temp*
+*!!__*
+node_modules
+
+.env
+.env.local
+

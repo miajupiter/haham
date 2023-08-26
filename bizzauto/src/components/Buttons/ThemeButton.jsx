@@ -1,8 +1,7 @@
 // `use client`
 
-import { use, useEffect, useState } from 'react'
-import { ThemeProvider, useTheme } from 'next-themes'
-import { useThemeMode } from 'flowbite-react'
+import {  useEffect } from 'react'
+import { useTheme } from 'next-themes'
 const IconSun = ({size=18}) => (
   <svg
     fill='none'
