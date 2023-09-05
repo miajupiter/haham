@@ -1,0 +1,164 @@
+{
+  "pages": {
+    "login": {
+      "title": "Hesabınıza giriş yapın",
+      "signin": "Giriş yap",
+      "signup": "Kaydol",
+      "divider": "veya",
+      "fields": {
+        "email": "E-posta",
+        "password": "Şifre"
+      },
+      "errors": {
+        "validEmail": "Geçersiz e-posta adresi"
+      },
+      "buttons": {
+        "submit": "Giriş yap",
+        "forgotPassword": "Şifrenizi mi unuttunuz?",
+        "noAccount": "Hesabınız yok mu?",
+        "rememberMe": "Beni hatırla"
+      }
+    },
+    "forgotPassword": {
+      "title": "Şifrenizi mi unuttunuz?",
+      "fields": {
+        "email": "E-posta"
+      },
+      "errors": {
+        "validEmail": "Geçersiz e-posta adresi"
+      },
+      "buttons": {
+        "submit": "Sıfırlama talimatlarını gönder"
+      }
+    },
+    "register": {
+      "title": "Hesap oluşturun",
+      "fields": {
+        "email": "E-posta",
+        "password": "Şifre"
+      },
+      "errors": {
+        "validEmail": "Geçersiz e-posta adresi"
+      },
+      "buttons": {
+        "submit": "Kaydol",
+        "haveAccount": "Zaten hesabınız var mı?"
+      }
+    },
+    "updatePassword": {
+      "title": "Şifreyi güncelle",
+      "fields": {
+        "password": "Yeni Şifre",
+        "confirmPassword": "Yeni şifreyi onayla"
+      },
+      "errors": {
+        "confirmPasswordNotMatch": "Şifreler uyuşmuyor"
+      },
+      "buttons": {
+        "submit": "Güncelle"
+      }
+    },
+    "error": {
+      "info": "{{action}} bileşenini {{resource}} kaynağına eklemeyi unutmuş olabilirsiniz.",
+      "404": "Üzgünüz, ziyaret ettiğiniz sayfa mevcut değil.",
+      "resource404": "{{resource}} kaynağını oluşturduğunuza emin misiniz?",
+      "backHome": "Ana Sayfa'ya dön"
+    }
+  },
+  "actions": {
+    "list": "Listele",
+    "create": "Oluştur",
+    "edit": "Düzenle",
+    "show": "Göster"
+  },
+  "buttons": {
+    "create": "Oluştur",
+    "save": "Kaydet",
+    "logout": "Çıkış yap",
+    "delete": "Sil",
+    "edit": "Düzenle",
+    "cancel": "İptal",
+    "confirm": "Emin misiniz?",
+    "filter": "Filtrele",
+    "clear": "Temizle",
+    "refresh": "Yenile",
+    "show": "Göster",
+    "undo": "Geri al",
+    "import": "İçe Aktar",
+    "clone": "Kopyala",
+    "notAccessTitle": "Erişim izniniz yok"
+  },
+  "warnWhenUnsavedChanges": "Ayrılmak istediğinizden emin misiniz? Kaydedilmemiş değişiklikleriniz var.",
+  "notifications": {
+    "success": "Başarılı",
+    "error": "Hata (durum kodu: {{statusCode}})",
+    "undoable": "{{seconds}} saniyeniz geri almak için",
+    "createSuccess": "{{resource}} başarıyla oluşturuldu",
+    "createError": "{{resource}} oluşturulurken hata oluştu (durum kodu: {{statusCode}})",
+    "deleteSuccess": "{{resource}} başarıyla silindi",
+    "deleteError": "{{resource}} silinirken hata oluştu (durum kodu: {{statusCode}})",
+    "editSuccess": "{{resource}} başarıyla düzenlendi",
+    "editError": "{{resource}} düzenlenirken hata oluştu (durum kodu: {{statusCode}})",
+    "importProgress": "İçe aktarılıyor: {{processed}}/{{total}}"
+  },
+  "loading": "Yükleniyor",
+  "tags": {
+    "clone": "Kopyala"
+  },
+  "dashboard": {
+    "title": "Kontrol Paneli"
+  },
+  "blog_posts": {
+    "blog_posts": "Blog Yazıları",
+    "fields": {
+      "id": "Kimlik",
+      "title": "Başlık",
+      "content": "İçerik",
+      "status": "Durum",
+      "createdAt": "Oluşturulma Tarihi",
+      "category": "Kategori"
+    },
+    "titles": {
+      "create": "Yeni Blog Yazısı Oluştur",
+      "edit": "Blog Yazısını Düzenle",
+      "list": "Blog Yazıları",
+      "show": "Blog Yazısını Göster"
+    }
+  },
+  "categories": {
+    "categories": "Kategoriler",
+    "fields": {
+      "id": "Kimlik",
+      "title": "Başlık",
+      "createdAt": "Oluşturulma Tarihi"
+    },
+    "titles": {
+      "create": "Yeni Kategori Oluştur",
+      "edit": "Kategoriyi Düzenle",
+      "list": "Kategoriler",
+      "show": "Kategoriyi Göster"
+    }
+  },
+  "documentTitle": {
+    "default": "rafla",
+    "suffix": " | rafla",
+    "blog_posts": {
+      "list": "Blog Yazıları | rafla",
+      "show": "#{{id}} Blog Yazısını Göster | rafla",
+      "edit": "#{{id}} Blog Yazısını Düzenle | rafla",
+      "create": "Yeni Blog Yazısı Oluştur | rafla",
+      "clone": "#{{id}} Blog Yazısını Kopyala | rafla"
+    },
+    "categories": {
+      "list": "Kategoriler | rafla",
+      "show": "#{{id}} Kategoriyi Göster | rafla",
+      "edit": "#{{id}} Kategoriyi Düzenle | rafla",
+      "create": "Yeni Kategori Oluştur | rafla",
+      "clone": "#{{id}} Kategoriyi Kopyala | rafla"
+    }
+  },
+  "table": {
+    "actions": "Eylemler"
+  },
+  "hello-world":"Merhaba Dunya!"
+}

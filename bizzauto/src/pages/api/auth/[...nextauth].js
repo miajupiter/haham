@@ -48,6 +48,7 @@ export const authOptions = {
       return token
     },
   },
+
 }
 
 export default NextAuth(authOptions)

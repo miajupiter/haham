@@ -1,15 +1,20 @@
 import ThemeButton from '@/components/Buttons/ThemeButton'
 import LogoutButton from '@/components/Buttons/LogoutButton'
 // import { useRouter, withRouter } from 'next/router'
-import { signIn, signOut, useSession } from 'next-auth/react'
-
+import {  useSession } from 'next-auth/react'
+import { useTranslation } from 'next-i18next'
 import { useEffect, useState } from 'react'
+import Link from 'next/link'
+import { MainLayout } from '@/components/Layouts/MainLayout'
+
 
 export function Home(props){
+  const { t, i18n } = useTranslation()
   const { data } = useSession()
   const session=data
 
   return(
+    <MainLayout >
     <div>
      {!session && (
             <>
@@ -66,12 +71,22 @@ export function Home(props){
       <a href='/haham' >haham admin panel</a>
     </p>
     <p>
-      {/* {data!=null?<button onClick={signOut} >log out</button>:
-      <button onClick={signIn} >Login</button>
-      } */}
-      
+      <a href='/belge' >Belge MDX</a>
     </p>
+    <p>
+    <Link href="/" locale={'tr'}>
+      <button>{t('hello-world', 'tr' )}</button>
+    </Link>
+    </p>
+    <p>
+    <Link href="/" locale={'en'}>
+      <button>{t('hello-world', 'en')}</button>
+    </Link>
+    </p>
+    
+    <p>{t('hello-world','tr')}</p>
     </div>
+    </MainLayout>
   )
 }
 

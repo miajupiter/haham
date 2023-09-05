@@ -1,5 +1,5 @@
-import { basePath } from "../../../next.config"
-
+// import { basePath } from "../../../next.config"
+const basePath='/'
 export const LogoutButton = (props) => {
   const logoutClick = () => {
     localStorage.removeItem('loggedIn')
